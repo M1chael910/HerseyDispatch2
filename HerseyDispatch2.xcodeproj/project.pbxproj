@@ -90,7 +90,6 @@
 		2413004E22583EB60099EB3A /* HerseyDispatch2 */ = {
 			isa = PBXGroup;
 			children = (
-				2413006622583F350099EB3A /* Model */,
 				2413006522583F2E0099EB3A /* Controller */,
 				2413006422583F280099EB3A /* View */,
 				2413004F22583EB60099EB3A /* AppDelegate.swift */,
@@ -125,13 +124,6 @@
 				2413006722583F4A0099EB3A /* HowlViewController.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		2413006622583F350099EB3A /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		3E28809C812311B738F37722 /* Frameworks */ = {
