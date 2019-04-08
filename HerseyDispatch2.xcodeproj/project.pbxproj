@@ -8,22 +8,44 @@
 
 /* Begin PBXBuildFile section */
 		2413005022583EB60099EB3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2413004F22583EB60099EB3A /* AppDelegate.swift */; };
-		2413005222583EB60099EB3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2413005122583EB60099EB3A /* ViewController.swift */; };
 		2413005522583EB60099EB3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2413005322583EB60099EB3A /* Main.storyboard */; };
 		2413005822583EB60099EB3A /* HerseyDispatch2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2413005622583EB60099EB3A /* HerseyDispatch2.xcdatamodeld */; };
 		2413005A22583EB90099EB3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2413005922583EB90099EB3A /* Assets.xcassets */; };
 		2413005D22583EB90099EB3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2413005B22583EB90099EB3A /* LaunchScreen.storyboard */; };
+		2413006822583F4A0099EB3A /* HowlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2413006722583F4A0099EB3A /* HowlViewController.swift */; };
+		2413007322583FC60099EB3A /* HTVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2413006B22583FC50099EB3A /* HTVViewController.swift */; };
+		2413007422583FC60099EB3A /* DHTVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2413006C22583FC50099EB3A /* DHTVViewController.swift */; };
+		2413007622583FC60099EB3A /* GoogleSignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2413006E22583FC50099EB3A /* GoogleSignInVC.swift */; };
+		2413007722583FC60099EB3A /* CorrespondentListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2413006F22583FC50099EB3A /* CorrespondentListVC.swift */; };
+		2413007822583FC60099EB3A /* CorrespondentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2413007022583FC50099EB3A /* CorrespondentViewController.swift */; };
+		2413007922583FC60099EB3A /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2413007122583FC60099EB3A /* LiveViewController.swift */; };
+		2413007A22583FC60099EB3A /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2413007222583FC60099EB3A /* HomeVC.swift */; };
+		243E6CAF225A95FA0070127F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 243E6CAE225A95FA0070127F /* GoogleService-Info.plist */; };
+		24618BF32258424D0085C678 /* CorrespondentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24618BF22258424D0085C678 /* CorrespondentCell.swift */; };
+		EB5297299B82DC6168085CB1 /* Pods_HerseyDispatch2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23D9F0761FD3D5BD3A2C0861 /* Pods_HerseyDispatch2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		23D9F0761FD3D5BD3A2C0861 /* Pods_HerseyDispatch2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HerseyDispatch2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2413004C22583EB60099EB3A /* HerseyDispatch2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HerseyDispatch2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2413004F22583EB60099EB3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2413005122583EB60099EB3A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2413005422583EB60099EB3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2413005722583EB60099EB3A /* HerseyDispatch2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HerseyDispatch2.xcdatamodel; sourceTree = "<group>"; };
 		2413005922583EB90099EB3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2413005C22583EB90099EB3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2413005E22583EB90099EB3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2413006722583F4A0099EB3A /* HowlViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HowlViewController.swift; sourceTree = "<group>"; };
+		2413006B22583FC50099EB3A /* HTVViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTVViewController.swift; sourceTree = "<group>"; };
+		2413006C22583FC50099EB3A /* DHTVViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DHTVViewController.swift; sourceTree = "<group>"; };
+		2413006E22583FC50099EB3A /* GoogleSignInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleSignInVC.swift; sourceTree = "<group>"; };
+		2413006F22583FC50099EB3A /* CorrespondentListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CorrespondentListVC.swift; sourceTree = "<group>"; };
+		2413007022583FC50099EB3A /* CorrespondentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CorrespondentViewController.swift; sourceTree = "<group>"; };
+		2413007122583FC60099EB3A /* LiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
+		2413007222583FC60099EB3A /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		243E6CAE225A95FA0070127F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		24618BF22258424D0085C678 /* CorrespondentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CorrespondentCell.swift; sourceTree = "<group>"; };
+		C14EAB19A219FA88012A11A3 /* Pods-HerseyDispatch2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HerseyDispatch2.release.xcconfig"; path = "Pods/Target Support Files/Pods-HerseyDispatch2/Pods-HerseyDispatch2.release.xcconfig"; sourceTree = "<group>"; };
+		D55A295268591D9CCB4A2448 /* Pods-HerseyDispatch2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HerseyDispatch2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HerseyDispatch2/Pods-HerseyDispatch2.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +53,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB5297299B82DC6168085CB1 /* Pods_HerseyDispatch2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1BBB1FEB3703EB8B0E1B87E2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D55A295268591D9CCB4A2448 /* Pods-HerseyDispatch2.debug.xcconfig */,
+				C14EAB19A219FA88012A11A3 /* Pods-HerseyDispatch2.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		2413004322583EB60099EB3A = {
 			isa = PBXGroup;
 			children = (
 				2413004E22583EB60099EB3A /* HerseyDispatch2 */,
 				2413004D22583EB60099EB3A /* Products */,
+				1BBB1FEB3703EB8B0E1B87E2 /* Pods */,
+				3E28809C812311B738F37722 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +90,56 @@
 		2413004E22583EB60099EB3A /* HerseyDispatch2 */ = {
 			isa = PBXGroup;
 			children = (
+				2413006622583F350099EB3A /* Model */,
+				2413006522583F2E0099EB3A /* Controller */,
+				2413006422583F280099EB3A /* View */,
 				2413004F22583EB60099EB3A /* AppDelegate.swift */,
-				2413005122583EB60099EB3A /* ViewController.swift */,
 				2413005322583EB60099EB3A /* Main.storyboard */,
+				243E6CAE225A95FA0070127F /* GoogleService-Info.plist */,
 				2413005922583EB90099EB3A /* Assets.xcassets */,
 				2413005B22583EB90099EB3A /* LaunchScreen.storyboard */,
 				2413005E22583EB90099EB3A /* Info.plist */,
 				2413005622583EB60099EB3A /* HerseyDispatch2.xcdatamodeld */,
 			);
 			path = HerseyDispatch2;
+			sourceTree = "<group>";
+		};
+		2413006422583F280099EB3A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				24618BF22258424D0085C678 /* CorrespondentCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2413006522583F2E0099EB3A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2413006F22583FC50099EB3A /* CorrespondentListVC.swift */,
+				2413007022583FC50099EB3A /* CorrespondentViewController.swift */,
+				2413006C22583FC50099EB3A /* DHTVViewController.swift */,
+				2413006E22583FC50099EB3A /* GoogleSignInVC.swift */,
+				2413007222583FC60099EB3A /* HomeVC.swift */,
+				2413006B22583FC50099EB3A /* HTVViewController.swift */,
+				2413007122583FC60099EB3A /* LiveViewController.swift */,
+				2413006722583F4A0099EB3A /* HowlViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2413006622583F350099EB3A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3E28809C812311B738F37722 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23D9F0761FD3D5BD3A2C0861 /* Pods_HerseyDispatch2.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +149,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2413006122583EB90099EB3A /* Build configuration list for PBXNativeTarget "HerseyDispatch2" */;
 			buildPhases = (
+				0F09401DB2675EF200AF4563 /* [CP] Check Pods Manifest.lock */,
 				2413004822583EB60099EB3A /* Sources */,
 				2413004922583EB60099EB3A /* Frameworks */,
 				2413004A22583EB60099EB3A /* Resources */,
+				6E01532AB95FA9469AF06D1B /* [CP] Embed Pods Frameworks */,
+				1C6DE12CBA8D68D13107CC23 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -128,19 +206,109 @@
 				2413005D22583EB90099EB3A /* LaunchScreen.storyboard in Resources */,
 				2413005A22583EB90099EB3A /* Assets.xcassets in Resources */,
 				2413005522583EB60099EB3A /* Main.storyboard in Resources */,
+				243E6CAF225A95FA0070127F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F09401DB2675EF200AF4563 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HerseyDispatch2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1C6DE12CBA8D68D13107CC23 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HerseyDispatch2/Pods-HerseyDispatch2-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HerseyDispatch2/Pods-HerseyDispatch2-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E01532AB95FA9469AF06D1B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HerseyDispatch2/Pods-HerseyDispatch2-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HerseyDispatch2/Pods-HerseyDispatch2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2413004822583EB60099EB3A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2413005222583EB60099EB3A /* ViewController.swift in Sources */,
+				2413007422583FC60099EB3A /* DHTVViewController.swift in Sources */,
+				2413007622583FC60099EB3A /* GoogleSignInVC.swift in Sources */,
+				2413007822583FC60099EB3A /* CorrespondentViewController.swift in Sources */,
 				2413005822583EB60099EB3A /* HerseyDispatch2.xcdatamodeld in Sources */,
+				24618BF32258424D0085C678 /* CorrespondentCell.swift in Sources */,
+				2413007922583FC60099EB3A /* LiveViewController.swift in Sources */,
 				2413005022583EB60099EB3A /* AppDelegate.swift in Sources */,
+				2413006822583F4A0099EB3A /* HowlViewController.swift in Sources */,
+				2413007322583FC60099EB3A /* HTVViewController.swift in Sources */,
+				2413007A22583FC60099EB3A /* HomeVC.swift in Sources */,
+				2413007722583FC60099EB3A /* CorrespondentListVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,16 +452,17 @@
 		};
 		2413006222583EB90099EB3A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D55A295268591D9CCB4A2448 /* Pods-HerseyDispatch2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 63N3REBS57;
+				DEVELOPMENT_TEAM = 46LMRFK8CD;
 				INFOPLIST_FILE = HerseyDispatch2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.MichaelMurphy.HerseyDispatch2;
+				PRODUCT_BUNDLE_IDENTIFIER = org.d214.jhhs.620263.HerseyDispatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -302,16 +471,17 @@
 		};
 		2413006322583EB90099EB3A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C14EAB19A219FA88012A11A3 /* Pods-HerseyDispatch2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 63N3REBS57;
+				DEVELOPMENT_TEAM = 46LMRFK8CD;
 				INFOPLIST_FILE = HerseyDispatch2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.MichaelMurphy.HerseyDispatch2;
+				PRODUCT_BUNDLE_IDENTIFIER = org.d214.jhhs.620263.HerseyDispatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -1,24 +1,398 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PDB-5j-WgF">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--googleSignInViewController-->
+        <scene sceneID="Qnm-j9-kmb">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController storyboardIdentifier="GoogleSignInVC" title="googleSignInViewController" id="GKN-VZ-5yX" customClass="GoogleSignInVC" customModule="HerseyDispatch2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nnd-0J-xd8">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cassidyFire" translatesAutoresizingMaskIntoConstraints="NO" id="SfC-EB-1Ze">
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="768"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Wzm-Bi-qZV"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="herseyFootball" translatesAutoresizingMaskIntoConstraints="NO" id="e2A-on-Pjc">
+                                <rect key="frame" x="724" y="0.0" width="300" height="768"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="4xO-GZ-jB4"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HerseyLogo" translatesAutoresizingMaskIntoConstraints="NO" id="9Un-pD-GVk">
+                                <rect key="frame" x="400" y="483" width="224" height="245"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JlN-zx-c40" customClass="GIDSignInButton">
+                                <rect key="frame" x="400" y="253" width="224" height="90"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="MIb-cB-Ezb"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.66666668650000005" green="0.4619569999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9Un-pD-GVk" firstAttribute="leading" secondItem="SfC-EB-1Ze" secondAttribute="trailing" constant="100" id="11w-M2-t7J"/>
+                            <constraint firstItem="JlN-zx-c40" firstAttribute="centerX" secondItem="Nnd-0J-xd8" secondAttribute="centerX" id="1LZ-3u-izf"/>
+                            <constraint firstItem="e2A-on-Pjc" firstAttribute="bottom" secondItem="zp0-ic-Yb6" secondAttribute="bottom" id="5O5-kq-nsJ"/>
+                            <constraint firstItem="e2A-on-Pjc" firstAttribute="leading" secondItem="JlN-zx-c40" secondAttribute="trailing" constant="100" id="AKc-bX-iG5"/>
+                            <constraint firstItem="9Un-pD-GVk" firstAttribute="top" secondItem="JlN-zx-c40" secondAttribute="bottom" constant="140" id="HZY-vH-fRo"/>
+                            <constraint firstItem="9Un-pD-GVk" firstAttribute="leading" secondItem="SfC-EB-1Ze" secondAttribute="trailing" constant="100" id="XBI-F4-0i8"/>
+                            <constraint firstItem="SfC-EB-1Ze" firstAttribute="top" secondItem="Nnd-0J-xd8" secondAttribute="top" id="YHo-OF-jOu"/>
+                            <constraint firstItem="e2A-on-Pjc" firstAttribute="leading" secondItem="9Un-pD-GVk" secondAttribute="trailing" constant="100" id="b89-JN-1eR"/>
+                            <constraint firstItem="SfC-EB-1Ze" firstAttribute="leading" secondItem="zp0-ic-Yb6" secondAttribute="leading" id="cHM-y9-Sdn"/>
+                            <constraint firstItem="zp0-ic-Yb6" firstAttribute="trailing" secondItem="e2A-on-Pjc" secondAttribute="trailing" id="fP6-0b-9Hi"/>
+                            <constraint firstItem="zp0-ic-Yb6" firstAttribute="bottom" secondItem="9Un-pD-GVk" secondAttribute="bottom" constant="40" id="nXZ-wA-TdN"/>
+                            <constraint firstItem="e2A-on-Pjc" firstAttribute="top" secondItem="Nnd-0J-xd8" secondAttribute="top" id="rV0-EK-0Sp"/>
+                            <constraint firstItem="SfC-EB-1Ze" firstAttribute="bottom" secondItem="zp0-ic-Yb6" secondAttribute="bottom" id="sF0-RR-tqg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zp0-ic-Yb6"/>
                     </view>
+                    <connections>
+                        <outlet property="googleSignInBtn" destination="JlN-zx-c40" id="DZ2-Am-YFa"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rfa-Dp-OHC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="37.5" y="-52.34375"/>
+        </scene>
+        <!--HomeVC-->
+        <scene sceneID="V1B-E8-Eee">
+            <objects>
+                <viewController title="HomeVC" id="Fto-y4-d59" customClass="HomeVC" customModule="HerseyDispatch2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UTi-1F-fqz">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dispatch" translatesAutoresizingMaskIntoConstraints="NO" id="soU-Eb-4Ie">
+                                <rect key="frame" x="0.0" y="20" width="1024" height="698"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BoF-Jo-xjn">
+                                <rect key="frame" x="923" y="20" width="81" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="threelines"/>
+                                <connections>
+                                    <action selector="hamburgerBtnPressed:" destination="Fto-y4-d59" eventType="touchUpInside" id="n5k-nj-4nd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.80553147589999996" blue="0.4479797184" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vZN-LQ-Pz0" firstAttribute="bottom" secondItem="soU-Eb-4Ie" secondAttribute="bottom" id="6JL-gM-nXH"/>
+                            <constraint firstItem="soU-Eb-4Ie" firstAttribute="leading" secondItem="vZN-LQ-Pz0" secondAttribute="leading" id="8Us-BB-7o0"/>
+                            <constraint firstItem="soU-Eb-4Ie" firstAttribute="top" secondItem="vZN-LQ-Pz0" secondAttribute="top" id="BVW-Fq-ons"/>
+                            <constraint firstItem="vZN-LQ-Pz0" firstAttribute="bottom" secondItem="soU-Eb-4Ie" secondAttribute="bottom" id="S0D-vi-euC"/>
+                            <constraint firstItem="soU-Eb-4Ie" firstAttribute="leading" secondItem="vZN-LQ-Pz0" secondAttribute="leading" id="URa-lf-IQr"/>
+                            <constraint firstItem="vZN-LQ-Pz0" firstAttribute="trailing" secondItem="soU-Eb-4Ie" secondAttribute="trailing" id="XVH-59-PQc"/>
+                            <constraint firstItem="vZN-LQ-Pz0" firstAttribute="trailing" secondItem="soU-Eb-4Ie" secondAttribute="trailing" id="aKg-PU-hMv"/>
+                            <constraint firstItem="soU-Eb-4Ie" firstAttribute="top" secondItem="vZN-LQ-Pz0" secondAttribute="top" id="d8D-eT-EBF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vZN-LQ-Pz0"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="home" selectedImage="home" id="U1d-Kb-Ds3" userLabel="Home Page"/>
+                    <connections>
+                        <outlet property="slideshowImageView" destination="soU-Eb-4Ie" id="Qvw-VS-SV8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PWB-1h-YPS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1639.453125" y="-52.34375"/>
+        </scene>
+        <!--dailyViewController-->
+        <scene sceneID="1GF-kr-xEo">
+            <objects>
+                <viewController title="dailyViewController" id="Kg3-CK-bsm" customClass="DailyViewController" customModule="HerseyDispatch" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GM1-Kp-TnA">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TdY-Yn-rrb">
+                                <rect key="frame" x="0.0" y="20" width="1024" height="698"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loadingImage" translatesAutoresizingMaskIntoConstraints="NO" id="phS-Bq-KR2">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="718"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TdY-Yn-rrb" firstAttribute="top" secondItem="WPW-uI-NZ5" secondAttribute="top" id="3TF-Db-Gad"/>
+                            <constraint firstItem="phS-Bq-KR2" firstAttribute="top" secondItem="GM1-Kp-TnA" secondAttribute="top" id="MOS-98-ddf"/>
+                            <constraint firstItem="phS-Bq-KR2" firstAttribute="bottom" secondItem="WPW-uI-NZ5" secondAttribute="bottom" id="WFk-GV-cXg"/>
+                            <constraint firstItem="TdY-Yn-rrb" firstAttribute="leading" secondItem="WPW-uI-NZ5" secondAttribute="leading" id="Y1S-jo-Acz"/>
+                            <constraint firstItem="WPW-uI-NZ5" firstAttribute="bottom" secondItem="TdY-Yn-rrb" secondAttribute="bottom" id="dFK-w0-7EA"/>
+                            <constraint firstItem="phS-Bq-KR2" firstAttribute="leading" secondItem="WPW-uI-NZ5" secondAttribute="leading" id="mrX-b1-OJN"/>
+                            <constraint firstItem="phS-Bq-KR2" firstAttribute="trailing" secondItem="WPW-uI-NZ5" secondAttribute="trailing" id="ptd-IB-Uvj"/>
+                            <constraint firstItem="WPW-uI-NZ5" firstAttribute="trailing" secondItem="TdY-Yn-rrb" secondAttribute="trailing" id="xMS-kd-aTZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WPW-uI-NZ5"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Daily" image="literature" selectedImage="literature" id="NF7-A2-p9F"/>
+                    <navigationItem key="navigationItem" id="8ji-3h-V4V"/>
+                    <connections>
+                        <outlet property="dailyWebView" destination="TdY-Yn-rrb" id="vTq-aP-LGt"/>
+                        <outlet property="loadingView" destination="phS-Bq-KR2" id="EP7-l9-LBT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cUZ-ie-mGy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2483.7890625" y="-763.28125"/>
+        </scene>
+        <!--correspondentViewController-->
+        <scene sceneID="2q2-0n-IKP">
+            <objects>
+                <viewController title="correspondentViewController" id="AJg-5x-miS" customClass="CorrespondentViewController" customModule="HerseyDispatch" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="doX-S0-qnr">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X2L-HC-4Ae">
+                                <rect key="frame" x="0.0" y="76" width="1024" height="692"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ma-AU-DTo">
+                                <rect key="frame" x="0.0" y="20" width="126" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="correspondentBackButton:" destination="AJg-5x-miS" eventType="touchUpInside" id="4Mo-cO-Emt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="iwm-yt-9nv"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Correspondent" image="order" selectedImage="order" id="c1e-fp-iZU"/>
+                    <connections>
+                        <outlet property="correspondentWebView" destination="X2L-HC-4Ae" id="iME-6W-SOz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Uj-7u-DB4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2484" y="-52"/>
+        </scene>
+        <!--liveViewController-->
+        <scene sceneID="iAL-hr-BAg">
+            <objects>
+                <viewController title="liveViewController" id="wfi-bi-BUQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p8j-mV-eOP">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jvU-n8-sfh">
+                                <rect key="frame" x="0.0" y="20" width="1024" height="698"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loadingImage" translatesAutoresizingMaskIntoConstraints="NO" id="dnq-47-VtB">
+                                <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mc5-zl-iY5" firstAttribute="bottom" secondItem="jvU-n8-sfh" secondAttribute="bottom" id="2Yg-sc-eGq"/>
+                            <constraint firstItem="jvU-n8-sfh" firstAttribute="leading" secondItem="mc5-zl-iY5" secondAttribute="leading" id="7G8-Pe-Zvb"/>
+                            <constraint firstAttribute="bottom" secondItem="dnq-47-VtB" secondAttribute="bottom" id="Dhv-UZ-xxR"/>
+                            <constraint firstItem="dnq-47-VtB" firstAttribute="leading" secondItem="mc5-zl-iY5" secondAttribute="leading" id="aCl-Fz-8VJ"/>
+                            <constraint firstItem="dnq-47-VtB" firstAttribute="top" secondItem="mc5-zl-iY5" secondAttribute="top" id="bea-4f-oil"/>
+                            <constraint firstAttribute="trailing" secondItem="dnq-47-VtB" secondAttribute="trailing" id="dQK-I0-D6l"/>
+                            <constraint firstItem="jvU-n8-sfh" firstAttribute="top" secondItem="mc5-zl-iY5" secondAttribute="top" id="f6j-aq-gcZ"/>
+                            <constraint firstItem="mc5-zl-iY5" firstAttribute="trailing" secondItem="jvU-n8-sfh" secondAttribute="trailing" id="iMc-jm-2Q8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mc5-zl-iY5"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Live" image="circled_play" id="q08-8I-efU"/>
+                    <connections>
+                        <outlet property="liveWebView" destination="jvU-n8-sfh" id="Ctg-5n-up6"/>
+                        <outlet property="loadingView" destination="dnq-47-VtB" id="eto-U5-DoA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jyb-7J-kH0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1640" y="674"/>
+        </scene>
+        <!--DHTVViewController-->
+        <scene sceneID="mBY-eN-UVG">
+            <objects>
+                <viewController title="DHTVViewController" id="jSx-2Z-kZM" customClass="DHTVViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oMQ-29-now">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U5V-6e-h3t">
+                                <rect key="frame" x="0.0" y="20" width="1024" height="698"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loadingImage" translatesAutoresizingMaskIntoConstraints="NO" id="M6c-G1-slU">
+                                <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="U5V-6e-h3t" firstAttribute="leading" secondItem="hh4-WA-3s5" secondAttribute="leading" id="NEk-Di-qYh"/>
+                            <constraint firstItem="U5V-6e-h3t" firstAttribute="top" secondItem="hh4-WA-3s5" secondAttribute="top" id="Zvf-6s-Wf9"/>
+                            <constraint firstItem="M6c-G1-slU" firstAttribute="top" secondItem="hh4-WA-3s5" secondAttribute="top" id="hpB-HF-2kp"/>
+                            <constraint firstAttribute="bottom" secondItem="M6c-G1-slU" secondAttribute="bottom" id="oP3-nA-rLd"/>
+                            <constraint firstItem="M6c-G1-slU" firstAttribute="leading" secondItem="hh4-WA-3s5" secondAttribute="leading" id="oj6-I9-W8z"/>
+                            <constraint firstAttribute="trailing" secondItem="M6c-G1-slU" secondAttribute="trailing" id="tga-e5-rEl"/>
+                            <constraint firstItem="hh4-WA-3s5" firstAttribute="bottom" secondItem="U5V-6e-h3t" secondAttribute="bottom" id="yPz-ie-3mx"/>
+                            <constraint firstItem="hh4-WA-3s5" firstAttribute="trailing" secondItem="U5V-6e-h3t" secondAttribute="trailing" id="zgx-5N-C4p"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hh4-WA-3s5"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="DHTV" image="dhtv" selectedImage="dhtv" id="w9b-aU-7Id"/>
+                    <connections>
+                        <outlet property="dhtvWebView" destination="U5V-6e-h3t" id="qda-zS-R5R"/>
+                        <outlet property="loadingView" destination="M6c-G1-slU" id="GBR-Y7-jdC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ef2-5w-Ffz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1655" y="1412"/>
+        </scene>
+        <!--HTVViewController-->
+        <scene sceneID="94L-rP-LhO">
+            <objects>
+                <viewController title="HTVViewController" id="thc-PH-1Kf" customClass="HTVViewController" customModule="HerseyDispatch" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GCm-sH-6mH">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dAX-N2-g9j">
+                                <rect key="frame" x="0.0" y="20" width="1024" height="698"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loadingImage" translatesAutoresizingMaskIntoConstraints="NO" id="Ku3-vV-kqG">
+                                <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Ku3-vV-kqG" secondAttribute="bottom" id="1dw-Jx-Zcm"/>
+                            <constraint firstItem="Ku3-vV-kqG" firstAttribute="top" secondItem="2Wo-2I-GQJ" secondAttribute="top" id="ORR-gD-3Cf"/>
+                            <constraint firstItem="dAX-N2-g9j" firstAttribute="bottom" secondItem="2Wo-2I-GQJ" secondAttribute="bottom" id="Qww-AB-gkf"/>
+                            <constraint firstItem="dAX-N2-g9j" firstAttribute="leading" secondItem="2Wo-2I-GQJ" secondAttribute="leading" id="Ztg-UM-Lc8"/>
+                            <constraint firstItem="dAX-N2-g9j" firstAttribute="top" secondItem="2Wo-2I-GQJ" secondAttribute="top" id="aUm-ID-XQO"/>
+                            <constraint firstAttribute="trailing" secondItem="Ku3-vV-kqG" secondAttribute="trailing" id="gEM-wM-PMV"/>
+                            <constraint firstItem="Ku3-vV-kqG" firstAttribute="leading" secondItem="2Wo-2I-GQJ" secondAttribute="leading" id="kU8-qR-2XF"/>
+                            <constraint firstItem="dAX-N2-g9j" firstAttribute="trailing" secondItem="2Wo-2I-GQJ" secondAttribute="trailing" id="nef-aL-2Zb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2Wo-2I-GQJ"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="HTV" image="Movie" selectedImage="Movie" id="6wl-t0-CZk"/>
+                    <connections>
+                        <outlet property="HTVWebView" destination="dAX-N2-g9j" id="CgG-W7-fiL"/>
+                        <outlet property="loadingView" destination="Ku3-vV-kqG" id="tmC-Ci-b43"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X6g-TD-x06" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2511.328125" y="1415.625"/>
+        </scene>
+        <!--howlViewController-->
+        <scene sceneID="Uu0-2E-Mt5">
+            <objects>
+                <viewController title="howlViewController" id="l9b-qq-JKo" customClass="HowlViewController" customModule="HerseyDispatch" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="33M-Yc-Qog">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0aG-0n-lEW">
+                                <rect key="frame" x="0.0" y="20" width="1024" height="698"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hlm-sb-rzR" firstAttribute="trailing" secondItem="0aG-0n-lEW" secondAttribute="trailing" id="1K8-Cm-PKN"/>
+                            <constraint firstItem="0aG-0n-lEW" firstAttribute="top" secondItem="hlm-sb-rzR" secondAttribute="top" id="eDg-5S-pRm"/>
+                            <constraint firstItem="hlm-sb-rzR" firstAttribute="bottom" secondItem="0aG-0n-lEW" secondAttribute="bottom" id="fhC-wA-f5Y"/>
+                            <constraint firstItem="0aG-0n-lEW" firstAttribute="leading" secondItem="hlm-sb-rzR" secondAttribute="leading" id="zxs-5U-vT6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hlm-sb-rzR"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Howl" image="test" selectedImage="test" id="lvB-sL-sOJ"/>
+                    <connections>
+                        <outlet property="howlWebView" destination="0aG-0n-lEW" id="Sji-zz-CDr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WYq-kC-7sG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2484" y="674"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="rHe-lx-OtQ">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="PDB-5j-WgF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wnW-9T-ClQ">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Fto-y4-d59" kind="relationship" relationship="viewControllers" id="4Ag-Jp-Shc"/>
+                        <segue destination="wfi-bi-BUQ" kind="relationship" relationship="viewControllers" id="Mf8-yg-E68"/>
+                        <segue destination="jSx-2Z-kZM" kind="relationship" relationship="viewControllers" id="umw-Dg-yvq"/>
+                        <segue destination="thc-PH-1Kf" kind="relationship" relationship="viewControllers" id="KEz-re-utA"/>
+                        <segue destination="l9b-qq-JKo" kind="relationship" relationship="viewControllers" id="tb0-BR-JNA"/>
+                        <segue destination="Kg3-CK-bsm" kind="relationship" relationship="viewControllers" id="APN-RO-VSy"/>
+                        <segue destination="AJg-5x-miS" kind="relationship" relationship="viewControllers" id="7yF-zB-fPt"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="guJ-5D-8jR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="924" y="-52"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Dispatch" width="432" height="151"/>
+        <image name="HerseyLogo" width="175" height="245"/>
+        <image name="Movie" width="30" height="30"/>
+        <image name="cassidyFire" width="400" height="400"/>
+        <image name="circled_play" width="30" height="30"/>
+        <image name="dhtv" width="27" height="22"/>
+        <image name="herseyFootball" width="800" height="662"/>
+        <image name="home" width="30" height="30"/>
+        <image name="literature" width="30" height="30"/>
+        <image name="loadingImage" width="300" height="300"/>
+        <image name="order" width="30" height="30"/>
+        <image name="test" width="43" height="30"/>
+        <image name="threelines" width="600" height="400"/>
+    </resources>
 </document>
