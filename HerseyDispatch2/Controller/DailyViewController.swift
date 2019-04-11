@@ -11,18 +11,28 @@ import WebKit
 import Firebase
 import GoogleSignIn
 
-class DailyViewController: UIViewController {
+class DailyViewController: UIViewController, WKNavigationDelegate {
     @IBOutlet weak var dailyWebView: WKWebView!
-    var dailyURL = URL(string: "http://www.africau.edu/images/default/sample.pdf")
+    @IBOutlet weak var loadingView: UIImageView!
+    var dailyURL = URL(string: "https://drive.google.com/file/d/1GUAAtEA769ZH3Z5vn-azvag79yvOUzSQ/view?usp=sharing")
     override func viewDidLoad() {
         super.viewDidLoad()
         let dailyRequest = URLRequest(url: dailyURL!)
         dailyWebView.load(dailyRequest)
+        loadingView.alpha = 1
+        dailyWebView.navigationDelegate = self
+        
+    }
+    
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        loadingView.alpha = 0
+        print("works!")
     }
     
     
     override func viewDidAppear(_ animated: Bool) {
         Analytics.logEvent("daily_pressed", parameters: nil)
+
     }
     
     /*
