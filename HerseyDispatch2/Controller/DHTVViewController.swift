@@ -12,9 +12,11 @@ import Firebase
 
 
 class DHTVViewController: UIViewController, WKNavigationDelegate {
+    
     @IBOutlet weak var dhtvWebView: WKWebView!
     @IBOutlet weak var loadingView: UIImageView!
     let dhtvURL = URL(string: "https://www.youtube.com/channel/UCIpBIAw41obYEzf4UW0aIXQ/featured")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         dhtvWebView.navigationDelegate = self
@@ -34,14 +36,14 @@ class DHTVViewController: UIViewController, WKNavigationDelegate {
         Analytics.logEvent("DHTV_pressed", parameters: nil)
     }
     
-    /*
+    
      // MANavigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        
+
     }
-    */
+ 
 
 }
