@@ -69,7 +69,7 @@
         <!--HomeVC-->
         <scene sceneID="V1B-E8-Eee">
             <objects>
-                <viewController title="HomeVC" id="Fto-y4-d59" customClass="HomeVC" customModule="HerseyDispatch2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="HomeVC" id="Fto-y4-d59" customClass="HomeVC" customModule="HerseyDispatch2" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UTi-1F-fqz">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -111,7 +111,7 @@
         <!--dailyViewController-->
         <scene sceneID="1GF-kr-xEo">
             <objects>
-                <viewController title="dailyViewController" id="Kg3-CK-bsm" customClass="DailyViewController" customModule="HerseyDispatch" sceneMemberID="viewController">
+                <viewController title="dailyViewController" id="Kg3-CK-bsm" customClass="DailyViewController" customModule="HerseyDispatch2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GM1-Kp-TnA">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -145,7 +145,7 @@
                     <navigationItem key="navigationItem" id="8ji-3h-V4V"/>
                     <connections>
                         <outlet property="dailyWebView" destination="TdY-Yn-rrb" id="vTq-aP-LGt"/>
-                        <outlet property="loadingView" destination="phS-Bq-KR2" id="EP7-l9-LBT"/>
+                        <outlet property="loadingView" destination="phS-Bq-KR2" id="M6n-vJ-kKv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cUZ-ie-mGy" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -193,7 +193,7 @@
         <!--liveViewController-->
         <scene sceneID="iAL-hr-BAg">
             <objects>
-                <viewController title="liveViewController" id="wfi-bi-BUQ" sceneMemberID="viewController">
+                <viewController title="liveViewController" id="wfi-bi-BUQ" customClass="LiveViewController" customModule="HerseyDispatch2" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="p8j-mV-eOP">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -236,7 +236,7 @@
         <!--DHTVViewController-->
         <scene sceneID="mBY-eN-UVG">
             <objects>
-                <viewController title="DHTVViewController" id="jSx-2Z-kZM" customClass="DHTVViewController" sceneMemberID="viewController">
+                <viewController title="DHTVViewController" id="jSx-2Z-kZM" customClass="DHTVViewController" customModule="HerseyDispatch2" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oMQ-29-now">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -279,7 +279,7 @@
         <!--HTVViewController-->
         <scene sceneID="94L-rP-LhO">
             <objects>
-                <viewController title="HTVViewController" id="thc-PH-1Kf" customClass="HTVViewController" customModule="HerseyDispatch" sceneMemberID="viewController">
+                <viewController title="HTVViewController" id="thc-PH-1Kf" customClass="HTVViewController" customModule="HerseyDispatch2" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GCm-sH-6mH">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -322,7 +322,7 @@
         <!--howlViewController-->
         <scene sceneID="Uu0-2E-Mt5">
             <objects>
-                <viewController title="howlViewController" id="l9b-qq-JKo" customClass="HowlViewController" customModule="HerseyDispatch" sceneMemberID="viewController">
+                <viewController title="howlViewController" id="l9b-qq-JKo" customClass="HowlViewController" customModule="HerseyDispatch2" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="33M-Yc-Qog">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
