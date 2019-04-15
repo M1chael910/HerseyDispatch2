@@ -14,8 +14,8 @@ import CoreFoundation
 
 
 class HomeVC: UIViewController {
-    @IBOutlet weak var slideshowImageView: UIImageView!
     
+    @IBOutlet weak var slideshowImageView: UIImageView!
     
     var slideshowImagesArray = [UIImage(named: "hersey_Dispatch")!, UIImage(named: "HerseyLogo"), UIImage(named: "herseyFootball")!, UIImage(named: "cassidyFire"), UIImage(named: "home")]
 
@@ -31,7 +31,7 @@ class HomeVC: UIViewController {
     } else {
         slideshowImageView.image = slideshowImagesArray[number]
     }
-    }
+}
     
     
     
