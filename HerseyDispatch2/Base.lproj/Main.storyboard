@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -144,10 +143,6 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Daily" image="literature" selectedImage="literature" id="NF7-A2-p9F"/>
                     <navigationItem key="navigationItem" id="8ji-3h-V4V"/>
-                    <connections>
-                        <outlet property="dailyWebView" destination="TdY-Yn-rrb" id="vTq-aP-LGt"/>
-                        <outlet property="loadingView" destination="phS-Bq-KR2" id="EP7-l9-LBT"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cUZ-ie-mGy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -225,10 +220,6 @@
                         <viewLayoutGuide key="safeArea" id="mc5-zl-iY5"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Live" image="circled_play" id="q08-8I-efU"/>
-                    <connections>
-                        <outlet property="liveWebView" destination="jvU-n8-sfh" id="Ctg-5n-up6"/>
-                        <outlet property="loadingView" destination="dnq-47-VtB" id="eto-U5-DoA"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jyb-7J-kH0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -21,23 +21,23 @@ class HowlViewController: UIViewController {
     func openAppOrStore(AppScheme: String, StoreID: String){
         let Appurl = URL(string: AppScheme)
         
-        if UIApplication.shared.openURL(Appurl!) == true
+        if UIApplication.shared.canOpenURL(Appurl!) == true
         {
-            UIApplication.shared.canOpenURL(Appurl!)
+            UIApplication.shared.openURL(Appurl!)
         }
         else{
             let Storeurl = URL(string: "itms-apps://itunes.apple.com/us/app/spotify-music-and-podcasts/id324684580?mt=8")
-            if UIApplication.shared.canOpenURL(Storeurl!) == true
-            {
-                UIApplication.shared.canOpenURL(Storeurl!)
-            }
+            
+            UIApplication.shared.openURL(Storeurl!)
+            
         }
     }
-
+    
     
     override func viewDidAppear(_ animated: Bool) {
         Analytics.logEvent("howl_pressed", parameters: nil)
     }
+    
     
     /*
     // MARK: - Navigation
