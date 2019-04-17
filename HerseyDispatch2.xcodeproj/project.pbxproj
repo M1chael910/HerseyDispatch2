@@ -22,6 +22,7 @@
 		2413007A22583FC60099EB3A /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2413007222583FC60099EB3A /* HomeVC.swift */; };
 		243E6CAF225A95FA0070127F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 243E6CAE225A95FA0070127F /* GoogleService-Info.plist */; };
 		24618BF32258424D0085C678 /* CorrespondentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24618BF22258424D0085C678 /* CorrespondentCell.swift */; };
+		E19867D0225BD34D00E9B203 /* DailyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19867CF225BD34D00E9B203 /* DailyViewController.swift */; };
 		EB5297299B82DC6168085CB1 /* Pods_HerseyDispatch2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23D9F0761FD3D5BD3A2C0861 /* Pods_HerseyDispatch2.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,7 @@
 		24618BF22258424D0085C678 /* CorrespondentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CorrespondentCell.swift; sourceTree = "<group>"; };
 		C14EAB19A219FA88012A11A3 /* Pods-HerseyDispatch2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HerseyDispatch2.release.xcconfig"; path = "Pods/Target Support Files/Pods-HerseyDispatch2/Pods-HerseyDispatch2.release.xcconfig"; sourceTree = "<group>"; };
 		D55A295268591D9CCB4A2448 /* Pods-HerseyDispatch2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HerseyDispatch2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HerseyDispatch2/Pods-HerseyDispatch2.debug.xcconfig"; sourceTree = "<group>"; };
+		E19867CF225BD34D00E9B203 /* DailyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +92,6 @@
 		2413004E22583EB60099EB3A /* HerseyDispatch2 */ = {
 			isa = PBXGroup;
 			children = (
-				2413006622583F350099EB3A /* Model */,
 				2413006522583F2E0099EB3A /* Controller */,
 				2413006422583F280099EB3A /* View */,
 				2413004F22583EB60099EB3A /* AppDelegate.swift */,
@@ -117,6 +118,7 @@
 			children = (
 				2413006F22583FC50099EB3A /* CorrespondentListVC.swift */,
 				2413007022583FC50099EB3A /* CorrespondentViewController.swift */,
+				E19867CF225BD34D00E9B203 /* DailyViewController.swift */,
 				2413006C22583FC50099EB3A /* DHTVViewController.swift */,
 				2413006E22583FC50099EB3A /* GoogleSignInVC.swift */,
 				2413007222583FC60099EB3A /* HomeVC.swift */,
@@ -125,13 +127,6 @@
 				2413006722583F4A0099EB3A /* HowlViewController.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		2413006622583F350099EB3A /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		3E28809C812311B738F37722 /* Frameworks */ = {
@@ -300,6 +295,7 @@
 			files = (
 				2413007422583FC60099EB3A /* DHTVViewController.swift in Sources */,
 				2413007622583FC60099EB3A /* GoogleSignInVC.swift in Sources */,
+				E19867D0225BD34D00E9B203 /* DailyViewController.swift in Sources */,
 				2413007822583FC60099EB3A /* CorrespondentViewController.swift in Sources */,
 				2413005822583EB60099EB3A /* HerseyDispatch2.xcdatamodeld in Sources */,
 				24618BF32258424D0085C678 /* CorrespondentCell.swift in Sources */,
