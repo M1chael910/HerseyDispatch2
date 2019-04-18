@@ -23,8 +23,6 @@ class CorrespondentListVC: UIViewController, UITableViewDataSource, UITableViewD
     }
     
     
-
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         return UITableViewCell()
     }
