@@ -20,41 +20,45 @@ class HomeVC: UIViewController {
     
     var ref: CollectionReference? = nil
     
-    var slideshowImagesArray = [UIImage(named: "hersey_Dispatch")!, UIImage(named: "HerseyLogo"), UIImage(named: "herseyFootball")!, UIImage(named: "cassidyFire"), UIImage(named: "home")]
+    var slideshowImagesArray: [UIImage] = []
 
     
     
     override func  viewDidLoad() {
         super.viewDidLoad()
         fetchImages()
-        
-//        var slideshowTimer = Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(HomeVC.changeImage), userInfo: nil, repeats: true)
-        
+        var slideshowTimer = Timer.scheduledTimer(timeInterval: 3.5, target: self, selector: #selector(HomeVC.changeImage), userInfo: nil, repeats: true)
     }
     
     
     func fetchImages() {
         
+        var images: [String] = []
         let DB = Firestore.firestore()
+        let storage = Storage.storage()
+        
         DB.collection("Images").getDocuments { (snap, err) in
             if let snap = snap {
                 for doc in snap.documents {
-                    print(doc.data())
+                    for value in doc.data().values {
+                        let string = value as! String
+                        images.append(string)
+                    }
+                }
+            }
+            
+            for imageString in images {
+                let pathReference = storage.reference(withPath: "Home Page Pictures/\(imageString)")
+                print(pathReference)
+                pathReference.getData(maxSize: 1 * 4000 * 4000) { (data, err) in
+                    if let data = data {
+                        let image = UIImage(data: data)
+                        self.slideshowImagesArray.append(image!)
+                        print(self.slideshowImagesArray.count)
+                    }
                 }
             }
         }
-        
-        
-        
-        
-        let imagesRef = Storage.storage().reference().child("")
-        
-        
-        
-        
-        
-        
-        
     }
     
     
