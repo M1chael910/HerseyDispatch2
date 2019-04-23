@@ -17,25 +17,40 @@ class HomeVC: UIViewController {
     
     @IBOutlet weak var slideshowImageView: UIImageView!
     
+    
+    var ref: CollectionReference? = nil
+    
     var slideshowImagesArray = [UIImage(named: "hersey_Dispatch")!, UIImage(named: "HerseyLogo"), UIImage(named: "herseyFootball")!, UIImage(named: "cassidyFire"), UIImage(named: "home")]
 
     
     
     override func  viewDidLoad() {
         super.viewDidLoad()
+        fetchImages()
         
-        
-        var slideshowTimer = Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(HomeVC.changeImage), userInfo: nil, repeats: true)
+//        var slideshowTimer = Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(HomeVC.changeImage), userInfo: nil, repeats: true)
         
     }
     
     
     func fetchImages() {
         
+        let DB = Firestore.firestore()
+        DB.collection("Images").getDocuments { (snap, err) in
+            if let snap = snap {
+                for doc in snap.documents {
+                    print(doc.data())
+                }
+            }
+        }
         
         
         
-        let imagesRef = Storage.storage().reference().child("<#T##path: String##String#>")
+        
+        let imagesRef = Storage.storage().reference().child("")
+        
+        
+        
         
         
         
