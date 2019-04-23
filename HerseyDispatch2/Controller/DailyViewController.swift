@@ -21,7 +21,6 @@ class DailyViewController: UIViewController, WKNavigationDelegate {
         dailyWebView.load(dailyRequest)
         loadingView.alpha = 1
         dailyWebView.navigationDelegate = self
-        
     }
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
