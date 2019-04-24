@@ -28,6 +28,7 @@ class HomeVC: UIViewController {
         super.viewDidLoad()
         fetchImages()
         var slideshowTimer = Timer.scheduledTimer(timeInterval: 3.5, target: self, selector: #selector(HomeVC.changeImage), userInfo: nil, repeats: true)
+        
     }
     
     
