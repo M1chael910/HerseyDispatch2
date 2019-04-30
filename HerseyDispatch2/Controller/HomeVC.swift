@@ -12,25 +12,19 @@ import GoogleSignIn
 import CoreFoundation
 
 
-
 class HomeVC: UIViewController {
     
     @IBOutlet weak var slideshowImageView: UIImageView!
     
-    
     var ref: CollectionReference? = nil
-    
     var slideshowImagesArray: [UIImage] = []
+    
 
-    
-    
     override func  viewDidLoad() {
         super.viewDidLoad()
         fetchImages()
-        var slideshowTimer = Timer.scheduledTimer(timeInterval: 3.5, target: self, selector: #selector(HomeVC.changeImage), userInfo: nil, repeats: true)
-        
+        var slideshowTimer = Timer.scheduledTimer(timeInterval: 4.0, target: self, selector: #selector(HomeVC.changeImage), userInfo: nil, repeats: true)
     }
-    
     
     func fetchImages() {
         
@@ -81,6 +75,7 @@ class HomeVC: UIViewController {
         Analytics.logEvent("home_pressed", parameters: nil)
     }
     
+    
     @IBAction func hamburgerBtnPressed(_ sender: UIButton) {
         let alert = UIAlertController(title: "Menu", message: "Welcome to the menu!", preferredStyle: .alert)
         
@@ -90,7 +85,7 @@ class HomeVC: UIViewController {
             let SignInVC = storyBoard.instantiateViewController(withIdentifier: "GoogleSignInVC")
             self.present(SignInVC, animated: true, completion: nil);
         }
-        let exitAction = UIAlertAction(title: "Exit", style: .default) {(action:UIAlertAction) in
+        let exitAction = UIAlertAction(title: "Cancel", style: .default) {(action:UIAlertAction) in
             alert.dismiss(animated: true, completion: nil);
         }
         
@@ -104,6 +99,4 @@ class HomeVC: UIViewController {
         let SignInVC = storyBoard.instantiateViewController(withIdentifier: "GoogleSignInVC")
         self.present(SignInVC, animated: true, completion: nil)
     }
-
-
 }
