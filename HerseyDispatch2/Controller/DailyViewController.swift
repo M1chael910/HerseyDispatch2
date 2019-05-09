@@ -15,6 +15,7 @@ class DailyViewController: UIViewController, WKNavigationDelegate {
     @IBOutlet weak var dailyWebView: WKWebView!
     @IBOutlet weak var loadingView: UIImageView!
     var dailyURL = URL(string: "https://drive.google.com/file/d/1GUAAtEA769ZH3Z5vn-azvag79yvOUzSQ/view?usp=sharing")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let dailyRequest = URLRequest(url: dailyURL!)
@@ -25,7 +26,6 @@ class DailyViewController: UIViewController, WKNavigationDelegate {
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         loadingView.alpha = 0
-        print("works!")
     }
     
     

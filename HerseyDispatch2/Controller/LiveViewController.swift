@@ -12,8 +12,10 @@ import Firebase
 
 
 class LiveViewController: UIViewController, WKNavigationDelegate {
+    
     @IBOutlet weak var liveWebView: WKWebView!
     @IBOutlet weak var loadingView: UIImageView!
+    
     let liveURL = URL(string: "https://www.youtube.com/playlist?list=PL6pl4znCi1SWvKRAVBg1d9sftWJkzYjav")
     override func viewDidLoad() {
         super.viewDidLoad()

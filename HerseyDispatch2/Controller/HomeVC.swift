@@ -23,7 +23,11 @@ class HomeVC: UIViewController {
     override func  viewDidLoad() {
         super.viewDidLoad()
         fetchImages()
-        var slideshowTimer = Timer.scheduledTimer(timeInterval: 4.0, target: self, selector: #selector(HomeVC.changeImage), userInfo: nil, repeats: true)
+        
+        if slideshowImagesArray.isEmpty == false {
+            var slideshowTimer = Timer.scheduledTimer(timeInterval: 4.0, target: self, selector: #selector(HomeVC.changeImage), userInfo: nil, repeats: true)
+        }
+    
     }
     
     func fetchImages() {
@@ -49,7 +53,6 @@ class HomeVC: UIViewController {
                     if let data = data {
                         let image = UIImage(data: data)
                         self.slideshowImagesArray.append(image!)
-                        print(self.slideshowImagesArray.count)
                     }
                 }
             }
