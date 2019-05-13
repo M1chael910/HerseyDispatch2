@@ -12,6 +12,7 @@ import GoogleSignIn
 import CoreFoundation
 
 
+
 class HomeVC: UIViewController {
     
     @IBOutlet weak var slideshowImageView: UIImageView!
@@ -59,7 +60,6 @@ class HomeVC: UIViewController {
         }
     }
     
-    
     @objc func changeImage() {
         var number = Int.random(in: 0...slideshowImagesArray.count - 1)
         if slideshowImagesArray[number] == slideshowImageView.image {
@@ -73,12 +73,11 @@ class HomeVC: UIViewController {
         }
     }
     
-    
     override func viewDidAppear(_ animated: Bool) {
         Analytics.logEvent("home_pressed", parameters: nil)
     }
     
-    
+
     @IBAction func hamburgerBtnPressed(_ sender: UIButton) {
         let alert = UIAlertController(title: "Menu", message: "Welcome to the menu!", preferredStyle: .alert)
         
@@ -102,4 +101,5 @@ class HomeVC: UIViewController {
         let SignInVC = storyBoard.instantiateViewController(withIdentifier: "GoogleSignInVC")
         self.present(SignInVC, animated: true, completion: nil)
     }
+    
 }
