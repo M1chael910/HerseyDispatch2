@@ -17,44 +17,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cassidyFire" translatesAutoresizingMaskIntoConstraints="NO" id="SfC-EB-1Ze">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cassidyFire" translatesAutoresizingMaskIntoConstraints="NO" id="SfC-EB-1Ze">
                                 <rect key="frame" x="0.0" y="0.0" width="300" height="768"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="Wzm-Bi-qZV"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="herseyFootball" translatesAutoresizingMaskIntoConstraints="NO" id="e2A-on-Pjc">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="herseyFootball" translatesAutoresizingMaskIntoConstraints="NO" id="e2A-on-Pjc">
                                 <rect key="frame" x="724" y="0.0" width="300" height="768"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="4xO-GZ-jB4"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HerseyLogo" translatesAutoresizingMaskIntoConstraints="NO" id="9Un-pD-GVk">
-                                <rect key="frame" x="400" y="712" width="224" height="16"/>
-                            </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JlN-zx-c40" customClass="GIDSignInButton">
-                                <rect key="frame" x="400" y="482" width="224" height="90"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JlN-zx-c40" customClass="GIDSignInButton">
+                                <rect key="frame" x="400" y="307" width="224" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="90" id="MIb-cB-Ezb"/>
-                                </constraints>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="HerseyLogo" translatesAutoresizingMaskIntoConstraints="NO" id="9Un-pD-GVk">
+                                <rect key="frame" x="382" y="483" width="260" height="245"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="ozd-9a-SrI"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.66666668650000005" green="0.4619569999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="9Un-pD-GVk" firstAttribute="leading" secondItem="SfC-EB-1Ze" secondAttribute="trailing" constant="100" id="11w-M2-t7J"/>
-                            <constraint firstItem="JlN-zx-c40" firstAttribute="centerX" secondItem="Nnd-0J-xd8" secondAttribute="centerX" id="1LZ-3u-izf"/>
-                            <constraint firstItem="e2A-on-Pjc" firstAttribute="bottom" secondItem="zp0-ic-Yb6" secondAttribute="bottom" id="5O5-kq-nsJ"/>
-                            <constraint firstItem="e2A-on-Pjc" firstAttribute="leading" secondItem="JlN-zx-c40" secondAttribute="trailing" constant="100" id="AKc-bX-iG5"/>
-                            <constraint firstItem="9Un-pD-GVk" firstAttribute="top" secondItem="JlN-zx-c40" secondAttribute="bottom" constant="140" id="HZY-vH-fRo"/>
-                            <constraint firstItem="9Un-pD-GVk" firstAttribute="leading" secondItem="SfC-EB-1Ze" secondAttribute="trailing" constant="100" id="XBI-F4-0i8"/>
-                            <constraint firstItem="SfC-EB-1Ze" firstAttribute="top" secondItem="Nnd-0J-xd8" secondAttribute="top" id="YHo-OF-jOu"/>
-                            <constraint firstItem="e2A-on-Pjc" firstAttribute="leading" secondItem="9Un-pD-GVk" secondAttribute="trailing" constant="100" id="b89-JN-1eR"/>
-                            <constraint firstItem="SfC-EB-1Ze" firstAttribute="leading" secondItem="zp0-ic-Yb6" secondAttribute="leading" id="cHM-y9-Sdn"/>
-                            <constraint firstItem="zp0-ic-Yb6" firstAttribute="trailing" secondItem="e2A-on-Pjc" secondAttribute="trailing" id="fP6-0b-9Hi"/>
-                            <constraint firstItem="zp0-ic-Yb6" firstAttribute="bottom" secondItem="9Un-pD-GVk" secondAttribute="bottom" constant="40" id="nXZ-wA-TdN"/>
-                            <constraint firstItem="e2A-on-Pjc" firstAttribute="top" secondItem="Nnd-0J-xd8" secondAttribute="top" id="rV0-EK-0Sp"/>
-                            <constraint firstItem="SfC-EB-1Ze" firstAttribute="bottom" secondItem="zp0-ic-Yb6" secondAttribute="bottom" id="sF0-RR-tqg"/>
+                            <constraint firstItem="9Un-pD-GVk" firstAttribute="centerX" secondItem="Nnd-0J-xd8" secondAttribute="centerX" id="BV3-Wd-oGp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zp0-ic-Yb6"/>
                     </view>
