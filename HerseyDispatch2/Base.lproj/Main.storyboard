@@ -30,10 +30,10 @@
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HerseyLogo" translatesAutoresizingMaskIntoConstraints="NO" id="9Un-pD-GVk">
-                                <rect key="frame" x="400" y="483" width="224" height="245"/>
+                                <rect key="frame" x="400" y="712" width="224" height="16"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JlN-zx-c40" customClass="GIDSignInButton">
-                                <rect key="frame" x="400" y="253" width="224" height="90"/>
+                                <rect key="frame" x="400" y="482" width="224" height="90"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="MIb-cB-Ezb"/>
