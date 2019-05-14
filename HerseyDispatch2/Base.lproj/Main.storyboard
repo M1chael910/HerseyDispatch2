@@ -17,29 +17,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cassidyFire" translatesAutoresizingMaskIntoConstraints="NO" id="SfC-EB-1Ze">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Movie" translatesAutoresizingMaskIntoConstraints="NO" id="SfC-EB-1Ze">
                                 <rect key="frame" x="0.0" y="0.0" width="300" height="768"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="herseyFootball" translatesAutoresizingMaskIntoConstraints="NO" id="e2A-on-Pjc">
-                                <rect key="frame" x="724" y="0.0" width="300" height="768"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JlN-zx-c40" customClass="GIDSignInButton">
-                                <rect key="frame" x="400" y="307" width="224" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="HerseyLogo" translatesAutoresizingMaskIntoConstraints="NO" id="9Un-pD-GVk">
-                                <rect key="frame" x="382" y="483" width="260" height="245"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="260" id="ozd-9a-SrI"/>
+                                    <constraint firstAttribute="width" constant="300" id="Wzm-Bi-qZV"/>
                                 </constraints>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="herseyFootball" translatesAutoresizingMaskIntoConstraints="NO" id="e2A-on-Pjc">
+                                <rect key="frame" x="724" y="0.0" width="300" height="768"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="4xO-GZ-jB4"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HerseyLogo" translatesAutoresizingMaskIntoConstraints="NO" id="9Un-pD-GVk">
+                                <rect key="frame" x="400" y="712" width="224" height="16"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JlN-zx-c40" customClass="GIDSignInButton">
+                                <rect key="frame" x="400" y="482" width="224" height="90"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="MIb-cB-Ezb"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.66666668650000005" green="0.4619569999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="9Un-pD-GVk" firstAttribute="centerX" secondItem="Nnd-0J-xd8" secondAttribute="centerX" id="BV3-Wd-oGp"/>
+                            <constraint firstItem="9Un-pD-GVk" firstAttribute="leading" secondItem="SfC-EB-1Ze" secondAttribute="trailing" constant="100" id="11w-M2-t7J"/>
+                            <constraint firstItem="JlN-zx-c40" firstAttribute="centerX" secondItem="Nnd-0J-xd8" secondAttribute="centerX" id="1LZ-3u-izf"/>
+                            <constraint firstItem="e2A-on-Pjc" firstAttribute="bottom" secondItem="zp0-ic-Yb6" secondAttribute="bottom" id="5O5-kq-nsJ"/>
+                            <constraint firstItem="e2A-on-Pjc" firstAttribute="leading" secondItem="JlN-zx-c40" secondAttribute="trailing" constant="100" id="AKc-bX-iG5"/>
+                            <constraint firstItem="9Un-pD-GVk" firstAttribute="top" secondItem="JlN-zx-c40" secondAttribute="bottom" constant="140" id="HZY-vH-fRo"/>
+                            <constraint firstItem="9Un-pD-GVk" firstAttribute="leading" secondItem="SfC-EB-1Ze" secondAttribute="trailing" constant="100" id="XBI-F4-0i8"/>
+                            <constraint firstItem="SfC-EB-1Ze" firstAttribute="top" secondItem="Nnd-0J-xd8" secondAttribute="top" id="YHo-OF-jOu"/>
+                            <constraint firstItem="e2A-on-Pjc" firstAttribute="leading" secondItem="9Un-pD-GVk" secondAttribute="trailing" constant="100" id="b89-JN-1eR"/>
+                            <constraint firstItem="SfC-EB-1Ze" firstAttribute="leading" secondItem="zp0-ic-Yb6" secondAttribute="leading" id="cHM-y9-Sdn"/>
+                            <constraint firstItem="zp0-ic-Yb6" firstAttribute="trailing" secondItem="e2A-on-Pjc" secondAttribute="trailing" id="fP6-0b-9Hi"/>
+                            <constraint firstItem="zp0-ic-Yb6" firstAttribute="bottom" secondItem="9Un-pD-GVk" secondAttribute="bottom" constant="40" id="nXZ-wA-TdN"/>
+                            <constraint firstItem="e2A-on-Pjc" firstAttribute="top" secondItem="Nnd-0J-xd8" secondAttribute="top" id="rV0-EK-0Sp"/>
+                            <constraint firstItem="SfC-EB-1Ze" firstAttribute="bottom" secondItem="zp0-ic-Yb6" secondAttribute="bottom" id="sF0-RR-tqg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zp0-ic-Yb6"/>
                     </view>
@@ -104,33 +119,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TdY-Yn-rrb">
-                                <rect key="frame" x="0.0" y="20" width="1024" height="698"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <wkWebViewConfiguration key="configuration">
-                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
-                                </wkWebViewConfiguration>
-                            </wkWebView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loadingImage" translatesAutoresizingMaskIntoConstraints="NO" id="phS-Bq-KR2">
                                 <rect key="frame" x="362" y="234" width="300" height="300"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="TdY-Yn-rrb" firstAttribute="top" secondItem="WPW-uI-NZ5" secondAttribute="top" id="3TF-Db-Gad"/>
                             <constraint firstItem="phS-Bq-KR2" firstAttribute="centerY" secondItem="GM1-Kp-TnA" secondAttribute="centerY" id="8zq-gg-eR6"/>
-                            <constraint firstItem="TdY-Yn-rrb" firstAttribute="leading" secondItem="WPW-uI-NZ5" secondAttribute="leading" id="Y1S-jo-Acz"/>
-                            <constraint firstItem="WPW-uI-NZ5" firstAttribute="bottom" secondItem="TdY-Yn-rrb" secondAttribute="bottom" id="dFK-w0-7EA"/>
                             <constraint firstItem="phS-Bq-KR2" firstAttribute="centerX" secondItem="GM1-Kp-TnA" secondAttribute="centerX" id="jOv-5L-AN9"/>
-                            <constraint firstItem="WPW-uI-NZ5" firstAttribute="trailing" secondItem="TdY-Yn-rrb" secondAttribute="trailing" id="xMS-kd-aTZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WPW-uI-NZ5"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Daily" image="literature" selectedImage="literature" id="NF7-A2-p9F"/>
                     <navigationItem key="navigationItem" id="8ji-3h-V4V"/>
                     <connections>
-                        <outlet property="dailyWebView" destination="TdY-Yn-rrb" id="vTq-aP-LGt"/>
                         <outlet property="loadingView" destination="phS-Bq-KR2" id="M6n-vJ-kKv"/>
                     </connections>
                 </viewController>
@@ -202,7 +204,7 @@
                                 </wkWebViewConfiguration>
                             </wkWebView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loadingImage" translatesAutoresizingMaskIntoConstraints="NO" id="dnq-47-VtB">
-                                <rect key="frame" x="362" y="234" width="300" height="300"/>
+                                <rect key="frame" x="504" y="376" width="16" height="16"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -372,7 +374,6 @@
         <image name="Dispatch" width="432" height="151"/>
         <image name="HerseyLogo" width="175" height="245"/>
         <image name="Movie" width="30" height="30"/>
-        <image name="cassidyFire" width="400" height="400"/>
         <image name="circled_play" width="30" height="30"/>
         <image name="dhtv" width="27" height="22"/>
         <image name="herseyFootball" width="800" height="662"/>
