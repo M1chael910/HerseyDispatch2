@@ -17,35 +17,67 @@ class HomeVC: UIViewController {
     
     @IBOutlet weak var slideshowImageView: UIImageView!
     
-    var slideshowImagesArray = [UIImage(named: "hersey_Dispatch")!, UIImage(named: "HerseyLogo"), UIImage(named: "herseyFootball")!, UIImage(named: "cassidyFire"), UIImage(named: "home")]
+    var ref: CollectionReference? = nil
+    var slideshowImagesArray: [UIImage] = []
+    
 
-    
-   @objc func changeImage() {
-        var number = Int.random(in: 0...slideshowImagesArray.count - 1)
-    if slideshowImagesArray[number] == slideshowImageView.image {
-        if number == slideshowImagesArray.count - 1 {
-            slideshowImageView.image = slideshowImagesArray[0]
-        } else {
-        slideshowImageView.image = slideshowImagesArray[number + 1]
-        }
-    } else {
-        slideshowImageView.image = slideshowImagesArray[number]
-    }
-}
-    
-    
-    
     override func  viewDidLoad() {
         super.viewDidLoad()
-        var slideshowTimer = Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(HomeVC.changeImage), userInfo: nil, repeats: true)
+        fetchImages()
         
+        if slideshowImagesArray.isEmpty == false {
+            var slideshowTimer = Timer.scheduledTimer(timeInterval: 4.0, target: self, selector: #selector(HomeVC.changeImage), userInfo: nil, repeats: true)
+        }
+    
     }
     
+    func fetchImages() {
+        
+        var images: [String] = []
+        let DB = Firestore.firestore()
+        let storage = Storage.storage()
+        
+        DB.collection("Images").getDocuments { (snap, err) in
+            if let snap = snap {
+                for doc in snap.documents {
+                    for value in doc.data().values {
+                        let string = value as! String
+                        images.append(string)
+                    }
+                }
+            }
+            
+            for imageString in images {
+                let pathReference = storage.reference(withPath: "Home Page Pictures/\(imageString)")
+                print(pathReference)
+                pathReference.getData(maxSize: 1 * 4000 * 4000) { (data, err) in
+                    if let data = data {
+                        let image = UIImage(data: data)
+                        self.slideshowImagesArray.append(image!)
+                    }
+                }
+            }
+        }
+    }
+    
+    @objc func changeImage() {
+        var number = Int.random(in: 0...slideshowImagesArray.count - 1)
+        if slideshowImagesArray[number] == slideshowImageView.image {
+            if number == slideshowImagesArray.count - 1 {
+                slideshowImageView.image = slideshowImagesArray[0]
+            } else {
+                slideshowImageView.image = slideshowImagesArray[number + 1]
+            }
+        } else {
+            slideshowImageView.image = slideshowImagesArray[number]
+        }
+    }
     
     override func viewDidAppear(_ animated: Bool) {
         Analytics.logEvent("home_pressed", parameters: nil)
     }
     
+
     @IBAction func hamburgerBtnPressed(_ sender: UIButton) {
         let alert = UIAlertController(title: "Menu", message: "Welcome to the menu!", preferredStyle: .alert)
         
@@ -55,7 +87,7 @@ class HomeVC: UIViewController {
             let SignInVC = storyBoard.instantiateViewController(withIdentifier: "GoogleSignInVC")
             self.present(SignInVC, animated: true, completion: nil);
         }
-        let exitAction = UIAlertAction(title: "Exit", style: .default) {(action:UIAlertAction) in
+        let exitAction = UIAlertAction(title: "Cancel", style: .default) {(action:UIAlertAction) in
             alert.dismiss(animated: true, completion: nil);
         }
         
@@ -69,6 +101,5 @@ class HomeVC: UIViewController {
         let SignInVC = storyBoard.instantiateViewController(withIdentifier: "GoogleSignInVC")
         self.present(SignInVC, animated: true, completion: nil)
     }
-
-
+    
 }

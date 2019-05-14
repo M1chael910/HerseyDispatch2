@@ -23,7 +23,6 @@ class HTVViewController: UIViewController, WKNavigationDelegate {
         loadingView.alpha = 1
         let urlRequest = URLRequest(url: url!)
         HTVWebView.load(urlRequest)
-        print("load")
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -32,7 +31,6 @@ class HTVViewController: UIViewController, WKNavigationDelegate {
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         loadingView.alpha = 0
-        print("works!")
     }
     
     

@@ -23,13 +23,13 @@ class DHTVViewController: UIViewController, WKNavigationDelegate {
         loadingView.alpha = 1
         let urlRequest = URLRequest(url: dhtvURL!)
         dhtvWebView.load(urlRequest)
-        print("load")
+        
         // Do any additional setup after loading the view.
     }
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         loadingView.alpha = 0
-        print("works!")
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {

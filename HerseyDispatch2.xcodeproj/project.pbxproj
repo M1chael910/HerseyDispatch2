@@ -16,12 +16,10 @@
 		2413007322583FC60099EB3A /* HTVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2413006B22583FC50099EB3A /* HTVViewController.swift */; };
 		2413007422583FC60099EB3A /* DHTVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2413006C22583FC50099EB3A /* DHTVViewController.swift */; };
 		2413007622583FC60099EB3A /* GoogleSignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2413006E22583FC50099EB3A /* GoogleSignInVC.swift */; };
-		2413007722583FC60099EB3A /* CorrespondentListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2413006F22583FC50099EB3A /* CorrespondentListVC.swift */; };
 		2413007822583FC60099EB3A /* CorrespondentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2413007022583FC50099EB3A /* CorrespondentViewController.swift */; };
 		2413007922583FC60099EB3A /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2413007122583FC60099EB3A /* LiveViewController.swift */; };
 		2413007A22583FC60099EB3A /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2413007222583FC60099EB3A /* HomeVC.swift */; };
 		243E6CAF225A95FA0070127F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 243E6CAE225A95FA0070127F /* GoogleService-Info.plist */; };
-		24618BF32258424D0085C678 /* CorrespondentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24618BF22258424D0085C678 /* CorrespondentCell.swift */; };
 		E19867D0225BD34D00E9B203 /* DailyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19867CF225BD34D00E9B203 /* DailyViewController.swift */; };
 		EB5297299B82DC6168085CB1 /* Pods_HerseyDispatch2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23D9F0761FD3D5BD3A2C0861 /* Pods_HerseyDispatch2.framework */; };
 /* End PBXBuildFile section */
@@ -39,12 +37,10 @@
 		2413006B22583FC50099EB3A /* HTVViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTVViewController.swift; sourceTree = "<group>"; };
 		2413006C22583FC50099EB3A /* DHTVViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DHTVViewController.swift; sourceTree = "<group>"; };
 		2413006E22583FC50099EB3A /* GoogleSignInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleSignInVC.swift; sourceTree = "<group>"; };
-		2413006F22583FC50099EB3A /* CorrespondentListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CorrespondentListVC.swift; sourceTree = "<group>"; };
 		2413007022583FC50099EB3A /* CorrespondentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CorrespondentViewController.swift; sourceTree = "<group>"; };
 		2413007122583FC60099EB3A /* LiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
 		2413007222583FC60099EB3A /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		243E6CAE225A95FA0070127F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		24618BF22258424D0085C678 /* CorrespondentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CorrespondentCell.swift; sourceTree = "<group>"; };
 		C14EAB19A219FA88012A11A3 /* Pods-HerseyDispatch2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HerseyDispatch2.release.xcconfig"; path = "Pods/Target Support Files/Pods-HerseyDispatch2/Pods-HerseyDispatch2.release.xcconfig"; sourceTree = "<group>"; };
 		D55A295268591D9CCB4A2448 /* Pods-HerseyDispatch2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HerseyDispatch2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HerseyDispatch2/Pods-HerseyDispatch2.debug.xcconfig"; sourceTree = "<group>"; };
 		E19867CF225BD34D00E9B203 /* DailyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyViewController.swift; sourceTree = "<group>"; };
@@ -93,7 +89,6 @@
 			isa = PBXGroup;
 			children = (
 				2413006522583F2E0099EB3A /* Controller */,
-				2413006422583F280099EB3A /* View */,
 				2413004F22583EB60099EB3A /* AppDelegate.swift */,
 				2413005322583EB60099EB3A /* Main.storyboard */,
 				243E6CAE225A95FA0070127F /* GoogleService-Info.plist */,
@@ -105,18 +100,9 @@
 			path = HerseyDispatch2;
 			sourceTree = "<group>";
 		};
-		2413006422583F280099EB3A /* View */ = {
-			isa = PBXGroup;
-			children = (
-				24618BF22258424D0085C678 /* CorrespondentCell.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		2413006522583F2E0099EB3A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				2413006F22583FC50099EB3A /* CorrespondentListVC.swift */,
 				2413007022583FC50099EB3A /* CorrespondentViewController.swift */,
 				E19867CF225BD34D00E9B203 /* DailyViewController.swift */,
 				2413006C22583FC50099EB3A /* DHTVViewController.swift */,
@@ -298,13 +284,11 @@
 				E19867D0225BD34D00E9B203 /* DailyViewController.swift in Sources */,
 				2413007822583FC60099EB3A /* CorrespondentViewController.swift in Sources */,
 				2413005822583EB60099EB3A /* HerseyDispatch2.xcdatamodeld in Sources */,
-				24618BF32258424D0085C678 /* CorrespondentCell.swift in Sources */,
 				2413007922583FC60099EB3A /* LiveViewController.swift in Sources */,
 				2413005022583EB60099EB3A /* AppDelegate.swift in Sources */,
 				2413006822583F4A0099EB3A /* HowlViewController.swift in Sources */,
 				2413007322583FC60099EB3A /* HTVViewController.swift in Sources */,
 				2413007A22583FC60099EB3A /* HomeVC.swift in Sources */,
-				2413007722583FC60099EB3A /* CorrespondentListVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
