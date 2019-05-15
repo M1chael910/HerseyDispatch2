@@ -23,12 +23,10 @@ class LiveViewController: UIViewController, WKNavigationDelegate {
         loadingView.alpha = 1
         let urlRequest = URLRequest(url: liveURL!)
         liveWebView.load(urlRequest)
-        print("load")
     }
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         loadingView.alpha = 0
-        print("works!")
     }
     
     override func viewDidAppear(_ animated: Bool) {
