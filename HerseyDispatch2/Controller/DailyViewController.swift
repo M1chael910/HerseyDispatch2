@@ -11,6 +11,8 @@ import WebKit
 import Firebase
 import GoogleSignIn
 import SafariServices
+
+
 class DailyViewController: UIViewController {
     var didLoad = false
     @IBOutlet weak var loadingView: UIImageView!
