@@ -318,28 +318,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0aG-0n-lEW">
-                                <rect key="frame" x="0.0" y="20" width="1024" height="698"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <wkWebViewConfiguration key="configuration">
-                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
-                                </wkWebViewConfiguration>
-                            </wkWebView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="loadingImage" translatesAutoresizingMaskIntoConstraints="NO" id="cqo-LI-NSc">
+                                <rect key="frame" x="262" y="134" width="500" height="500"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="hlm-sb-rzR" firstAttribute="trailing" secondItem="0aG-0n-lEW" secondAttribute="trailing" id="1K8-Cm-PKN"/>
-                            <constraint firstItem="0aG-0n-lEW" firstAttribute="top" secondItem="hlm-sb-rzR" secondAttribute="top" id="eDg-5S-pRm"/>
-                            <constraint firstItem="hlm-sb-rzR" firstAttribute="bottom" secondItem="0aG-0n-lEW" secondAttribute="bottom" id="fhC-wA-f5Y"/>
-                            <constraint firstItem="0aG-0n-lEW" firstAttribute="leading" secondItem="hlm-sb-rzR" secondAttribute="leading" id="zxs-5U-vT6"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="hlm-sb-rzR"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Howl" image="test" selectedImage="test" id="lvB-sL-sOJ"/>
-                    <connections>
-                        <outlet property="howlWebView" destination="0aG-0n-lEW" id="Sji-zz-CDr"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WYq-kC-7sG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
