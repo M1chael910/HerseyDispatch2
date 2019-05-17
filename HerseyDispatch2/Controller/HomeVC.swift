@@ -50,7 +50,7 @@ class HomeVC: UIViewController {
             for imageString in images {
                 let pathReference = storage.reference(withPath: "Home Page Pictures/\(imageString)")
                 print(pathReference)
-                pathReference.getData(maxSize: 1 * 4000 * 4000) { (data, err) in
+                pathReference.getData(maxSize: 1 * 10000 * 10000) { (data, err) in
                     if let data = data {
                         let image = UIImage(data: data)
                         self.slideshowImagesArray.append(image!)
