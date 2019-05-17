@@ -14,8 +14,8 @@ import SafariServices
 
 class CorrespondentViewController: UIViewController, UIWebViewDelegate {
 
-    let correspondentURL = URL(string: "nasa.gov")
-   
+   let correspondentURL = URL(string: "nasa.gov")
+   var didLoad = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,9 +24,16 @@ class CorrespondentViewController: UIViewController, UIWebViewDelegate {
     }
 
     override func viewDidAppear(_ animated: Bool) {
-        let config = SFSafariViewController.Configuration()
-        let vc = SFSafariViewController(url: correspondentURL!, configuration: config)
-        present(vc, animated: true)
+        if didLoad == false {
+            let config = SFSafariViewController.Configuration()
+            let vc = SFSafariViewController(url: correspondentURL!, configuration: config)
+            present(vc, animated: true)
+            didLoad = true
+        } else {
+            didLoad = false
+        }
+        
+    }
     }
     
 
@@ -40,4 +47,4 @@ class CorrespondentViewController: UIViewController, UIWebViewDelegate {
     }
     */
 
-}
+
