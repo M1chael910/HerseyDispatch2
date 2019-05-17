@@ -8,26 +8,32 @@
 
 import UIKit
 import WebKit
+import Firebase
+import GoogleSignIn
+import SafariServices
 
 class CorrespondentViewController: UIViewController, UIWebViewDelegate {
-    @IBOutlet weak var correspondentWebView: WKWebView!
-    var selectedDocument = ""
-    
+
+   let correspondentURL = URL(string: "nasa.gov")
+   var didLoad = false
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("\(selectedDocument)")
-        print("view loaded")
-        let correspondentURL = URL(string: selectedDocument)
-        let correspondentRequest = URLRequest(url: (correspondentURL)!)
-        correspondentWebView.load(correspondentRequest)
+
         // Do any additional setup after loading the view.
     }
-    @IBAction func correspondentBackButton(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
-    
+
     override func viewDidAppear(_ animated: Bool) {
+        if didLoad == false {
+            let config = SFSafariViewController.Configuration()
+            let vc = SFSafariViewController(url: correspondentURL!, configuration: config)
+            present(vc, animated: true)
+            didLoad = true
+        } else {
+            didLoad = false
+        }
         
+    }
     }
     
 
@@ -41,4 +47,4 @@ class CorrespondentViewController: UIViewController, UIWebViewDelegate {
     }
     */
 
-}
+

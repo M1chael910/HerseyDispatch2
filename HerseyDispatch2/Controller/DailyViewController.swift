@@ -37,11 +37,6 @@ class DailyViewController: UIViewController {
         
     }
 
-    override func viewDidDisappear(_ animated: Bool) {
-        print("there")
-        
-    }
-
     
 }
 
