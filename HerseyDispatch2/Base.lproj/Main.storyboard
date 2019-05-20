@@ -140,32 +140,21 @@
             </objects>
             <point key="canvasLocation" x="2483.7890625" y="-763.28125"/>
         </scene>
-        <!--correspondentViewController-->
-        <scene sceneID="2q2-0n-IKP">
+        <!--Correspondent-->
+        <scene sceneID="oBf-AZ-g7c">
             <objects>
-                <viewController title="correspondentViewController" id="AJg-5x-miS" customClass="CorrespondentViewController" customModule="HerseyDispatch" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="doX-S0-qnr">
+                <viewController id="nSZ-ON-BlU" customClass="CorrespondentViewController" customModule="HerseyDispatch2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="va4-Rs-2AI">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loadingImage" translatesAutoresizingMaskIntoConstraints="NO" id="1ox-G2-gMP">
-                                <rect key="frame" x="362" y="234" width="300" height="300"/>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="1ox-G2-gMP" firstAttribute="centerX" secondItem="doX-S0-qnr" secondAttribute="centerX" id="Fx2-N1-nm4"/>
-                            <constraint firstItem="1ox-G2-gMP" firstAttribute="centerX" secondItem="doX-S0-qnr" secondAttribute="centerX" id="ajU-nf-C5j"/>
-                            <constraint firstItem="1ox-G2-gMP" firstAttribute="centerY" secondItem="doX-S0-qnr" secondAttribute="centerY" id="gwi-lW-bGm"/>
-                            <constraint firstItem="1ox-G2-gMP" firstAttribute="centerY" secondItem="doX-S0-qnr" secondAttribute="centerY" id="mg3-lW-lfZ"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="iwm-yt-9nv"/>
+                        <viewLayoutGuide key="safeArea" id="Gf5-9N-NKs"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Correspondent" image="order" selectedImage="order" id="c1e-fp-iZU"/>
+                    <tabBarItem key="tabBarItem" title="Correspondent" id="0TS-Vr-LIn"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2Uj-7u-DB4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OfH-Fe-br3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2484" y="-52"/>
+            <point key="canvasLocation" x="3271" y="-120"/>
         </scene>
         <!--liveViewController-->
         <scene sceneID="iAL-hr-BAg">
@@ -331,7 +320,7 @@
                         <segue destination="thc-PH-1Kf" kind="relationship" relationship="viewControllers" id="KEz-re-utA"/>
                         <segue destination="l9b-qq-JKo" kind="relationship" relationship="viewControllers" id="tb0-BR-JNA"/>
                         <segue destination="Kg3-CK-bsm" kind="relationship" relationship="viewControllers" id="APN-RO-VSy"/>
-                        <segue destination="AJg-5x-miS" kind="relationship" relationship="viewControllers" id="7yF-zB-fPt"/>
+                        <segue destination="nSZ-ON-BlU" kind="relationship" relationship="viewControllers" id="5A0-vo-DgY"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="guJ-5D-8jR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -349,7 +338,6 @@
         <image name="home" width="30" height="30"/>
         <image name="literature" width="30" height="30"/>
         <image name="loadingImage" width="300" height="300"/>
-        <image name="order" width="30" height="30"/>
         <image name="test" width="43" height="30"/>
         <image name="threelines" width="600" height="400"/>
     </resources>

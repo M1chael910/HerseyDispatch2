@@ -30,8 +30,6 @@ class DailyViewController: UIViewController {
             present(vc, animated: true)
             didLoad = true
         } else {
-//            let vc = HomeVC()
-//            present(vc, animated: true)
             didLoad = false
         }
         

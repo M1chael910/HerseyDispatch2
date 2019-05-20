@@ -13,18 +13,17 @@ import GoogleSignIn
 import SafariServices
 
 class CorrespondentViewController: UIViewController, UIWebViewDelegate {
-
-   let correspondentURL = URL(string: "nasa.gov")
-   var didLoad = false
-
+    
+    let correspondentURL = URL(string: "https://drive.google.com/file/d/1GUAAtEA769ZH3Z5vn-azvag79yvOUzSQ/view?usp=sharing")
+    var didLoad = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
-
+    
     override func viewDidAppear(_ animated: Bool) {
         if didLoad == false {
+            print("hi")
             let config = SFSafariViewController.Configuration()
             let vc = SFSafariViewController(url: correspondentURL!, configuration: config)
             present(vc, animated: true)
@@ -32,19 +31,19 @@ class CorrespondentViewController: UIViewController, UIWebViewDelegate {
         } else {
             didLoad = false
         }
-        
-    }
-    }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
     }
-    */
+}
+
+
+/*
+ // MARK: - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+ // Get the new view controller using segue.destination.
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 
