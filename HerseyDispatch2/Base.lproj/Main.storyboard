@@ -150,7 +150,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Gf5-9N-NKs"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Correspondent" id="0TS-Vr-LIn"/>
+                    <tabBarItem key="tabBarItem" title="Correspondent" selectedImage="order" id="0TS-Vr-LIn"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OfH-Fe-br3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -338,6 +338,7 @@
         <image name="home" width="30" height="30"/>
         <image name="literature" width="30" height="30"/>
         <image name="loadingImage" width="300" height="300"/>
+        <image name="order" width="30" height="30"/>
         <image name="test" width="43" height="30"/>
         <image name="threelines" width="600" height="400"/>
     </resources>
