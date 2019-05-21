@@ -21,9 +21,6 @@ class DHTVViewController: UIViewController, WKNavigationDelegate {
         super.viewDidLoad()
         dhtvWebView.navigationDelegate = self
         loadingView.alpha = 1
-        let urlRequest = URLRequest(url: dhtvURL!)
-        dhtvWebView.load(urlRequest)
-        
         // Do any additional setup after loading the view.
     }
     
@@ -33,6 +30,8 @@ class DHTVViewController: UIViewController, WKNavigationDelegate {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        let urlRequest = URLRequest(url: dhtvURL!)
+        dhtvWebView.load(urlRequest)
         Analytics.logEvent("DHTV_pressed", parameters: nil)
     }
     

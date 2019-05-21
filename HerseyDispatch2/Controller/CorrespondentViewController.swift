@@ -23,7 +23,6 @@ class CorrespondentViewController: UIViewController, UIWebViewDelegate {
     
     override func viewDidAppear(_ animated: Bool) {
         if didLoad == false {
-            print("hi")
             let config = SFSafariViewController.Configuration()
             let vc = SFSafariViewController(url: correspondentURL!, configuration: config)
             present(vc, animated: true)

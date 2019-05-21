@@ -19,14 +19,15 @@ class HTVViewController: UIViewController, WKNavigationDelegate {
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        HTVWebView.navigationDelegate = self
         loadingView.alpha = 1
-        let urlRequest = URLRequest(url: url!)
-        HTVWebView.load(urlRequest)
     }
     
     override func viewDidAppear(_ animated: Bool) {
         Analytics.logEvent("HTVV_pressed", parameters: nil)
+        HTVWebView.navigationDelegate = self
+
+        let urlRequest = URLRequest(url: url!)
+        HTVWebView.load(urlRequest)
     }
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {

@@ -21,8 +21,6 @@ class LiveViewController: UIViewController, WKNavigationDelegate {
         super.viewDidLoad()
         liveWebView.navigationDelegate = self
         loadingView.alpha = 1
-        let urlRequest = URLRequest(url: liveURL!)
-        liveWebView.load(urlRequest)
     }
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
@@ -31,7 +29,9 @@ class LiveViewController: UIViewController, WKNavigationDelegate {
     
     override func viewDidAppear(_ animated: Bool) {
         Analytics.logEvent("live_pressed", parameters: nil)
-
+        liveWebView.navigationDelegate = self
+        let urlRequest = URLRequest(url: liveURL!)
+        liveWebView.load(urlRequest)
     }
     
     
