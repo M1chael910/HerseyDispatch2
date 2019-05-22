@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Movie" translatesAutoresizingMaskIntoConstraints="NO" id="SfC-EB-1Ze">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SfC-EB-1Ze">
                                 <rect key="frame" x="0.0" y="0.0" width="300" height="768"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="Wzm-Bi-qZV"/>
@@ -29,37 +29,43 @@
                                     <constraint firstAttribute="width" constant="300" id="4xO-GZ-jB4"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HerseyLogo" translatesAutoresizingMaskIntoConstraints="NO" id="9Un-pD-GVk">
-                                <rect key="frame" x="400" y="712" width="224" height="16"/>
-                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JlN-zx-c40" customClass="GIDSignInButton">
-                                <rect key="frame" x="400" y="482" width="224" height="90"/>
+                                <rect key="frame" x="392" y="339" width="240" height="90"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="90" id="MIb-cB-Ezb"/>
+                                    <constraint firstAttribute="height" constant="90" id="D7P-68-tNT"/>
+                                    <constraint firstAttribute="width" constant="240" id="VfG-il-P0B"/>
                                 </constraints>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HerseyLogo" translatesAutoresizingMaskIntoConstraints="NO" id="9Un-pD-GVk">
+                                <rect key="frame" x="400" y="491" width="224" height="167"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.66666668650000005" green="0.4619569999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="9Un-pD-GVk" firstAttribute="leading" secondItem="SfC-EB-1Ze" secondAttribute="trailing" constant="100" id="11w-M2-t7J"/>
-                            <constraint firstItem="JlN-zx-c40" firstAttribute="centerX" secondItem="Nnd-0J-xd8" secondAttribute="centerX" id="1LZ-3u-izf"/>
+                            <constraint firstItem="JlN-zx-c40" firstAttribute="centerY" secondItem="Nnd-0J-xd8" secondAttribute="centerY" id="2sK-Xc-Oq8"/>
                             <constraint firstItem="e2A-on-Pjc" firstAttribute="bottom" secondItem="zp0-ic-Yb6" secondAttribute="bottom" id="5O5-kq-nsJ"/>
-                            <constraint firstItem="e2A-on-Pjc" firstAttribute="leading" secondItem="JlN-zx-c40" secondAttribute="trailing" constant="100" id="AKc-bX-iG5"/>
-                            <constraint firstItem="9Un-pD-GVk" firstAttribute="top" secondItem="JlN-zx-c40" secondAttribute="bottom" constant="140" id="HZY-vH-fRo"/>
-                            <constraint firstItem="9Un-pD-GVk" firstAttribute="leading" secondItem="SfC-EB-1Ze" secondAttribute="trailing" constant="100" id="XBI-F4-0i8"/>
+                            <constraint firstItem="SfC-EB-1Ze" firstAttribute="leading" secondItem="zp0-ic-Yb6" secondAttribute="leading" id="6Pf-k2-su5"/>
+                            <constraint firstItem="e2A-on-Pjc" firstAttribute="top" secondItem="Nnd-0J-xd8" secondAttribute="top" id="6yA-HU-kMX"/>
+                            <constraint firstItem="e2A-on-Pjc" firstAttribute="trailing" secondItem="zp0-ic-Yb6" secondAttribute="trailing" id="Bch-5Q-x28"/>
+                            <constraint firstItem="e2A-on-Pjc" firstAttribute="bottom" secondItem="zp0-ic-Yb6" secondAttribute="bottom" id="GIp-PF-gCZ"/>
+                            <constraint firstItem="JlN-zx-c40" firstAttribute="centerX" secondItem="Nnd-0J-xd8" secondAttribute="centerX" id="Y5R-2J-NLf"/>
                             <constraint firstItem="SfC-EB-1Ze" firstAttribute="top" secondItem="Nnd-0J-xd8" secondAttribute="top" id="YHo-OF-jOu"/>
-                            <constraint firstItem="e2A-on-Pjc" firstAttribute="leading" secondItem="9Un-pD-GVk" secondAttribute="trailing" constant="100" id="b89-JN-1eR"/>
                             <constraint firstItem="SfC-EB-1Ze" firstAttribute="leading" secondItem="zp0-ic-Yb6" secondAttribute="leading" id="cHM-y9-Sdn"/>
                             <constraint firstItem="zp0-ic-Yb6" firstAttribute="trailing" secondItem="e2A-on-Pjc" secondAttribute="trailing" id="fP6-0b-9Hi"/>
-                            <constraint firstItem="zp0-ic-Yb6" firstAttribute="bottom" secondItem="9Un-pD-GVk" secondAttribute="bottom" constant="40" id="nXZ-wA-TdN"/>
+                            <constraint firstItem="SfC-EB-1Ze" firstAttribute="top" secondItem="Nnd-0J-xd8" secondAttribute="top" id="hon-x9-vZu"/>
                             <constraint firstItem="e2A-on-Pjc" firstAttribute="top" secondItem="Nnd-0J-xd8" secondAttribute="top" id="rV0-EK-0Sp"/>
                             <constraint firstItem="SfC-EB-1Ze" firstAttribute="bottom" secondItem="zp0-ic-Yb6" secondAttribute="bottom" id="sF0-RR-tqg"/>
+                            <constraint firstItem="SfC-EB-1Ze" firstAttribute="bottom" secondItem="zp0-ic-Yb6" secondAttribute="bottom" id="wrV-lb-0Dw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zp0-ic-Yb6"/>
                     </view>
                     <connections>
                         <outlet property="googleSignInBtn" destination="JlN-zx-c40" id="DZ2-Am-YFa"/>
+                        <outlet property="leftImageView" destination="e2A-on-Pjc" id="Yah-F1-Hl6"/>
+                        <outlet property="middleImageView" destination="9Un-pD-GVk" id="3ba-8D-gMx"/>
+                        <outlet property="rightImageView" destination="e2A-on-Pjc" id="1t1-9D-Qlx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rfa-Dp-OHC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -120,7 +126,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loadingImage" translatesAutoresizingMaskIntoConstraints="NO" id="phS-Bq-KR2">
-                                <rect key="frame" x="504" y="376" width="16" height="16"/>
+                                <rect key="frame" x="362" y="234" width="300" height="300"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
