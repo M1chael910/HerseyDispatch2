@@ -17,6 +17,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SfC-EB-1Ze">
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="768"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Wzm-Bi-qZV"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="herseyFootball" translatesAutoresizingMaskIntoConstraints="NO" id="e2A-on-Pjc">
+                                <rect key="frame" x="724" y="0.0" width="300" height="768"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="4xO-GZ-jB4"/>
+                                </constraints>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JlN-zx-c40" customClass="GIDSignInButton">
                                 <rect key="frame" x="392" y="339" width="240" height="90"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -25,23 +37,42 @@
                                     <constraint firstAttribute="width" constant="240" id="VfG-il-P0B"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LOGIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I8U-r3-2LM">
-                                <rect key="frame" x="369" y="178" width="287" height="95"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HerseyLogo" translatesAutoresizingMaskIntoConstraints="NO" id="9Un-pD-GVk">
+                                <rect key="frame" x="400" y="491" width="224" height="167"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LOGIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vVf-6M-qf0">
+                                <rect key="frame" x="369" y="165" width="287" height="95"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="86"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.87151205567098455" green="0.66798146002657999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.66666668650000005" green="0.4619569999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="JlN-zx-c40" firstAttribute="centerY" secondItem="Nnd-0J-xd8" secondAttribute="centerY" id="2sK-Xc-Oq8"/>
+                            <constraint firstItem="e2A-on-Pjc" firstAttribute="bottom" secondItem="zp0-ic-Yb6" secondAttribute="bottom" id="5O5-kq-nsJ"/>
+                            <constraint firstItem="SfC-EB-1Ze" firstAttribute="leading" secondItem="zp0-ic-Yb6" secondAttribute="leading" id="6Pf-k2-su5"/>
+                            <constraint firstItem="e2A-on-Pjc" firstAttribute="top" secondItem="Nnd-0J-xd8" secondAttribute="top" id="6yA-HU-kMX"/>
+                            <constraint firstItem="e2A-on-Pjc" firstAttribute="trailing" secondItem="zp0-ic-Yb6" secondAttribute="trailing" id="Bch-5Q-x28"/>
+                            <constraint firstItem="e2A-on-Pjc" firstAttribute="bottom" secondItem="zp0-ic-Yb6" secondAttribute="bottom" id="GIp-PF-gCZ"/>
                             <constraint firstItem="JlN-zx-c40" firstAttribute="centerX" secondItem="Nnd-0J-xd8" secondAttribute="centerX" id="Y5R-2J-NLf"/>
+                            <constraint firstItem="SfC-EB-1Ze" firstAttribute="top" secondItem="Nnd-0J-xd8" secondAttribute="top" id="YHo-OF-jOu"/>
+                            <constraint firstItem="SfC-EB-1Ze" firstAttribute="leading" secondItem="zp0-ic-Yb6" secondAttribute="leading" id="cHM-y9-Sdn"/>
+                            <constraint firstItem="zp0-ic-Yb6" firstAttribute="trailing" secondItem="e2A-on-Pjc" secondAttribute="trailing" id="fP6-0b-9Hi"/>
+                            <constraint firstItem="SfC-EB-1Ze" firstAttribute="top" secondItem="Nnd-0J-xd8" secondAttribute="top" id="hon-x9-vZu"/>
+                            <constraint firstItem="e2A-on-Pjc" firstAttribute="top" secondItem="Nnd-0J-xd8" secondAttribute="top" id="rV0-EK-0Sp"/>
+                            <constraint firstItem="SfC-EB-1Ze" firstAttribute="bottom" secondItem="zp0-ic-Yb6" secondAttribute="bottom" id="sF0-RR-tqg"/>
+                            <constraint firstItem="SfC-EB-1Ze" firstAttribute="bottom" secondItem="zp0-ic-Yb6" secondAttribute="bottom" id="wrV-lb-0Dw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zp0-ic-Yb6"/>
                     </view>
                     <connections>
                         <outlet property="googleSignInBtn" destination="JlN-zx-c40" id="DZ2-Am-YFa"/>
+                        <outlet property="leftImageView" destination="e2A-on-Pjc" id="Yah-F1-Hl6"/>
+                        <outlet property="middleImageView" destination="9Un-pD-GVk" id="3ba-8D-gMx"/>
+                        <outlet property="rightImageView" destination="e2A-on-Pjc" id="1t1-9D-Qlx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rfa-Dp-OHC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -327,9 +358,11 @@
     </scenes>
     <resources>
         <image name="Dispatch" width="432" height="151"/>
+        <image name="HerseyLogo" width="175" height="245"/>
         <image name="Movie" width="30" height="30"/>
         <image name="circled_play" width="30" height="30"/>
         <image name="dhtv" width="27" height="22"/>
+        <image name="herseyFootball" width="800" height="662"/>
         <image name="home" width="30" height="30"/>
         <image name="literature" width="30" height="30"/>
         <image name="loadingImage" width="300" height="300"/>
