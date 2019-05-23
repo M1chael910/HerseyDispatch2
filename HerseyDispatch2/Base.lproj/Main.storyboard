@@ -132,7 +132,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="phS-Bq-KR2" firstAttribute="centerY" secondItem="GM1-Kp-TnA" secondAttribute="centerY" id="8zq-gg-eR6"/>
+                            <constraint firstItem="WPW-uI-NZ5" firstAttribute="trailing" secondItem="phS-Bq-KR2" secondAttribute="trailing" constant="362" id="ZhZ-AS-Yae"/>
+                            <constraint firstItem="phS-Bq-KR2" firstAttribute="leading" secondItem="WPW-uI-NZ5" secondAttribute="leading" constant="362" id="bNK-0I-8vg"/>
+                            <constraint firstItem="phS-Bq-KR2" firstAttribute="top" secondItem="WPW-uI-NZ5" secondAttribute="top" constant="214" id="ccb-xc-86V"/>
                             <constraint firstItem="phS-Bq-KR2" firstAttribute="centerX" secondItem="GM1-Kp-TnA" secondAttribute="centerX" id="jOv-5L-AN9"/>
+                            <constraint firstItem="WPW-uI-NZ5" firstAttribute="bottom" secondItem="phS-Bq-KR2" secondAttribute="bottom" constant="184" id="lkN-64-icM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WPW-uI-NZ5"/>
                     </view>
@@ -153,10 +157,21 @@
                     <view key="view" contentMode="scaleToFill" id="va4-Rs-2AI">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loadingImage" translatesAutoresizingMaskIntoConstraints="NO" id="Lc6-Iz-ov5">
+                                <rect key="frame" x="362" y="234" width="300" height="300"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Gf5-9N-NKs" firstAttribute="trailing" secondItem="Lc6-Iz-ov5" secondAttribute="trailing" constant="362" id="EOf-3A-Yxv"/>
+                            <constraint firstItem="Lc6-Iz-ov5" firstAttribute="top" secondItem="Gf5-9N-NKs" secondAttribute="top" constant="214" id="JgE-cM-kTI"/>
+                            <constraint firstItem="Gf5-9N-NKs" firstAttribute="bottom" secondItem="Lc6-Iz-ov5" secondAttribute="bottom" constant="184" id="YdU-If-ERn"/>
+                            <constraint firstItem="Lc6-Iz-ov5" firstAttribute="leading" secondItem="Gf5-9N-NKs" secondAttribute="leading" constant="362" id="kry-m3-seu"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Gf5-9N-NKs"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Correspondent" selectedImage="order" id="0TS-Vr-LIn"/>
+                    <tabBarItem key="tabBarItem" title="Correspondent" image="order" selectedImage="order" id="0TS-Vr-LIn"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OfH-Fe-br3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
