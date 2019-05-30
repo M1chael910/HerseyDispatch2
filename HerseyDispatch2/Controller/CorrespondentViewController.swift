@@ -14,7 +14,7 @@ import SafariServices
 
 class CorrespondentViewController: UIViewController, UIWebViewDelegate {
     
-    let correspondentURL = URL(string: "https://drive.google.com/file/d/1GUAAtEA769ZH3Z5vn-azvag79yvOUzSQ/view?usp=sharing")
+    let correspondentURL = URL(string: "https://www.herseydispatch.com/copy-of-entertainment")
     var didLoad = false
     
     override func viewDidLoad() {
