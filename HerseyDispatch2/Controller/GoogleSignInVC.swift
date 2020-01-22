@@ -13,8 +13,6 @@ import GoogleSignIn
 
 class GoogleSignInVC: UIViewController, GIDSignInUIDelegate {
     
-    @IBOutlet weak var leftImageView: UIImageView!
-    @IBOutlet weak var rightImageView: UIImageView!
     @IBOutlet weak var middleImageView: UIImageView!
     @IBOutlet weak var googleSignInBtn: GIDSignInButton!
 
@@ -64,15 +62,15 @@ class GoogleSignInVC: UIViewController, GIDSignInUIDelegate {
                 }
             }
             
-            for image in fetchedImages {
-                if image.accessibilityIdentifier == "HerseyLogo.png" {
-                    self.middleImageView.image = image
-                } else if image.accessibilityIdentifier == "herseyFootball.jpeg"{
-                    self.leftImageView.image = image
-                } else if image.accessibilityIdentifier == "cassidyFire.jpg" {
-                    self.rightImageView.image = image
-                }
-            }
+//            for image in fetchedImages {
+//                if image.accessibilityIdentifier == "HerseyLogo.png" {
+//                    self.middleImageView.image = image
+//                } else if image.accessibilityIdentifier == "herseyFootball.jpeg"{
+//                    self.leftImageView.image = image
+//                } else if image.accessibilityIdentifier == "cassidyFire.jpg" {
+//                    self.rightImageView.image = image
+//                }
+//            }
         }
     }
     

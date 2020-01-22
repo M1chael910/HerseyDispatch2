@@ -85,6 +85,7 @@ class HomeVC: UIViewController {
             GIDSignIn.sharedInstance()?.signOut()
             let storyBoard = UIStoryboard(name: "Main", bundle: Bundle.main)
             let SignInVC = storyBoard.instantiateViewController(withIdentifier: "GoogleSignInVC")
+            
             self.present(SignInVC, animated: true, completion: nil);
         }
         let exitAction = UIAlertAction(title: "Cancel", style: .default) {(action:UIAlertAction) in
