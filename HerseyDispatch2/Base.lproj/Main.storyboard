@@ -53,7 +53,7 @@
         <!--HomeVC-->
         <scene sceneID="V1B-E8-Eee">
             <objects>
-                <viewController title="HomeVC" id="Fto-y4-d59" customClass="HomeVC" customModule="HerseyDispatch2" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeVC" title="HomeVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Fto-y4-d59" customClass="HomeVC" customModule="HerseyDispatch2" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UTi-1F-fqz">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -109,12 +109,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="phS-Bq-KR2" firstAttribute="centerY" secondItem="GM1-Kp-TnA" secondAttribute="centerY" id="8zq-gg-eR6"/>
                             <constraint firstItem="WPW-uI-NZ5" firstAttribute="trailing" secondItem="phS-Bq-KR2" secondAttribute="trailing" constant="362" id="ZhZ-AS-Yae"/>
                             <constraint firstItem="phS-Bq-KR2" firstAttribute="leading" secondItem="WPW-uI-NZ5" secondAttribute="leading" constant="362" id="bNK-0I-8vg"/>
                             <constraint firstItem="phS-Bq-KR2" firstAttribute="top" secondItem="WPW-uI-NZ5" secondAttribute="top" constant="214" id="ccb-xc-86V"/>
+                            <constraint firstItem="WPW-uI-NZ5" firstAttribute="trailing" secondItem="phS-Bq-KR2" secondAttribute="trailing" constant="362" id="f9u-z5-Lj3"/>
                             <constraint firstItem="phS-Bq-KR2" firstAttribute="centerX" secondItem="GM1-Kp-TnA" secondAttribute="centerX" id="jOv-5L-AN9"/>
                             <constraint firstItem="WPW-uI-NZ5" firstAttribute="bottom" secondItem="phS-Bq-KR2" secondAttribute="bottom" constant="184" id="lkN-64-icM"/>
+                            <constraint firstItem="phS-Bq-KR2" firstAttribute="leading" secondItem="WPW-uI-NZ5" secondAttribute="leading" constant="362" id="nlN-UC-eJ9"/>
+                            <constraint firstItem="WPW-uI-NZ5" firstAttribute="bottom" secondItem="phS-Bq-KR2" secondAttribute="bottom" constant="184" id="sWO-oe-xa8"/>
+                            <constraint firstItem="phS-Bq-KR2" firstAttribute="top" secondItem="WPW-uI-NZ5" secondAttribute="top" constant="214" id="vhV-Zf-UY8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WPW-uI-NZ5"/>
                     </view>
@@ -196,47 +199,6 @@
             </objects>
             <point key="canvasLocation" x="1640" y="674"/>
         </scene>
-        <!--DHTVViewController-->
-        <scene sceneID="mBY-eN-UVG">
-            <objects>
-                <viewController title="DHTVViewController" id="jSx-2Z-kZM" customClass="DHTVViewController" customModule="HerseyDispatch2" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="oMQ-29-now">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U5V-6e-h3t">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="718"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <wkWebViewConfiguration key="configuration">
-                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
-                                </wkWebViewConfiguration>
-                            </wkWebView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loadingImage" translatesAutoresizingMaskIntoConstraints="NO" id="M6c-G1-slU">
-                                <rect key="frame" x="362" y="234" width="300" height="300"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="M6c-G1-slU" firstAttribute="centerX" secondItem="oMQ-29-now" secondAttribute="centerX" id="EHz-rf-uh5"/>
-                            <constraint firstItem="U5V-6e-h3t" firstAttribute="leading" secondItem="hh4-WA-3s5" secondAttribute="leading" id="NEk-Di-qYh"/>
-                            <constraint firstItem="U5V-6e-h3t" firstAttribute="top" secondItem="hh4-WA-3s5" secondAttribute="top" id="Zvf-6s-Wf9"/>
-                            <constraint firstItem="M6c-G1-slU" firstAttribute="centerY" secondItem="oMQ-29-now" secondAttribute="centerY" id="qJ9-0v-hlG"/>
-                            <constraint firstItem="hh4-WA-3s5" firstAttribute="bottom" secondItem="U5V-6e-h3t" secondAttribute="bottom" id="yPz-ie-3mx"/>
-                            <constraint firstItem="hh4-WA-3s5" firstAttribute="trailing" secondItem="U5V-6e-h3t" secondAttribute="trailing" id="zgx-5N-C4p"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="hh4-WA-3s5"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="DHTV" image="dhtv" selectedImage="dhtv" id="w9b-aU-7Id"/>
-                    <connections>
-                        <outlet property="dhtvWebView" destination="U5V-6e-h3t" id="qda-zS-R5R"/>
-                        <outlet property="loadingView" destination="M6c-G1-slU" id="GBR-Y7-jdC"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ef2-5w-Ffz" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1655" y="1412"/>
-        </scene>
         <!--HTVViewController-->
         <scene sceneID="94L-rP-LhO">
             <objects>
@@ -315,10 +277,9 @@
                     <connections>
                         <segue destination="Fto-y4-d59" kind="relationship" relationship="viewControllers" id="4Ag-Jp-Shc"/>
                         <segue destination="wfi-bi-BUQ" kind="relationship" relationship="viewControllers" id="Mf8-yg-E68"/>
-                        <segue destination="jSx-2Z-kZM" kind="relationship" relationship="viewControllers" id="umw-Dg-yvq"/>
                         <segue destination="thc-PH-1Kf" kind="relationship" relationship="viewControllers" id="KEz-re-utA"/>
                         <segue destination="l9b-qq-JKo" kind="relationship" relationship="viewControllers" id="tb0-BR-JNA"/>
-                        <segue destination="Kg3-CK-bsm" kind="relationship" relationship="viewControllers" id="APN-RO-VSy"/>
+                        <segue destination="Kg3-CK-bsm" kind="relationship" relationship="viewControllers" destinationCreationSelector="toDaily" id="APN-RO-VSy"/>
                         <segue destination="nSZ-ON-BlU" kind="relationship" relationship="viewControllers" id="5A0-vo-DgY"/>
                     </connections>
                 </tabBarController>
@@ -331,7 +292,6 @@
         <image name="Dispatch" width="432" height="151"/>
         <image name="Movie" width="30" height="30"/>
         <image name="circled_play" width="30" height="30"/>
-        <image name="dhtv" width="27" height="22"/>
         <image name="hersey_Dispatch" width="1221" height="610"/>
         <image name="home" width="30" height="30"/>
         <image name="literature" width="30" height="30"/>

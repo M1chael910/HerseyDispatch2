@@ -12,7 +12,7 @@ import Firebase
 import GoogleSignIn
 import SafariServices
 
-class HowlViewController: UIViewController {
+class HowlViewController: UIViewController, SFSafariViewControllerDelegate {
     var didLoad = false
     var howlURL = URL(string: "https://open.spotify.com/show/4GWy4SoByapLHcHj6arT1J")
     
@@ -25,6 +25,7 @@ class HowlViewController: UIViewController {
         if didLoad == false {
             let config = SFSafariViewController.Configuration()
             let vc = SFSafariViewController(url: howlURL!, configuration: config)
+            vc.delegate = self
             present(vc, animated: true)
             didLoad = true
         } else {
@@ -33,7 +34,10 @@ class HowlViewController: UIViewController {
         
     }
     
-    
+    func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
+        print("done")
+        self.tabBarController!.selectedIndex = 0
+    }
 //    override func viewDidLoad() {
 //        super.viewDidLoad()
 //        openAppOrStore(AppScheme: "Spotify://", StoreID: "id324684580")

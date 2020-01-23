@@ -14,7 +14,6 @@
 		2413005D22583EB90099EB3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2413005B22583EB90099EB3A /* LaunchScreen.storyboard */; };
 		2413006822583F4A0099EB3A /* HowlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2413006722583F4A0099EB3A /* HowlViewController.swift */; };
 		2413007322583FC60099EB3A /* HTVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2413006B22583FC50099EB3A /* HTVViewController.swift */; };
-		2413007422583FC60099EB3A /* DHTVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2413006C22583FC50099EB3A /* DHTVViewController.swift */; };
 		2413007622583FC60099EB3A /* GoogleSignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2413006E22583FC50099EB3A /* GoogleSignInVC.swift */; };
 		2413007822583FC60099EB3A /* CorrespondentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2413007022583FC50099EB3A /* CorrespondentViewController.swift */; };
 		2413007922583FC60099EB3A /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2413007122583FC60099EB3A /* LiveViewController.swift */; };
@@ -35,7 +34,6 @@
 		2413005E22583EB90099EB3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2413006722583F4A0099EB3A /* HowlViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HowlViewController.swift; sourceTree = "<group>"; };
 		2413006B22583FC50099EB3A /* HTVViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTVViewController.swift; sourceTree = "<group>"; };
-		2413006C22583FC50099EB3A /* DHTVViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DHTVViewController.swift; sourceTree = "<group>"; };
 		2413006E22583FC50099EB3A /* GoogleSignInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleSignInVC.swift; sourceTree = "<group>"; };
 		2413007022583FC50099EB3A /* CorrespondentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CorrespondentViewController.swift; sourceTree = "<group>"; };
 		2413007122583FC60099EB3A /* LiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
@@ -105,7 +103,6 @@
 			children = (
 				2413007022583FC50099EB3A /* CorrespondentViewController.swift */,
 				E19867CF225BD34D00E9B203 /* DailyViewController.swift */,
-				2413006C22583FC50099EB3A /* DHTVViewController.swift */,
 				2413006E22583FC50099EB3A /* GoogleSignInVC.swift */,
 				2413007222583FC60099EB3A /* HomeVC.swift */,
 				2413006B22583FC50099EB3A /* HTVViewController.swift */,
@@ -279,7 +276,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2413007422583FC60099EB3A /* DHTVViewController.swift in Sources */,
 				2413007622583FC60099EB3A /* GoogleSignInVC.swift in Sources */,
 				E19867D0225BD34D00E9B203 /* DailyViewController.swift in Sources */,
 				2413007822583FC60099EB3A /* CorrespondentViewController.swift in Sources */,

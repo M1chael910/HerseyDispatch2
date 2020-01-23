@@ -12,7 +12,7 @@ import Firebase
 import GoogleSignIn
 import SafariServices
 
-class CorrespondentViewController: UIViewController, UIWebViewDelegate {
+class CorrespondentViewController: UIViewController, UIWebViewDelegate, SFSafariViewControllerDelegate {
     
     let correspondentURL = URL(string: "https://www.herseydispatch.com/copy-of-entertainment")
     var didLoad = false
@@ -26,12 +26,17 @@ class CorrespondentViewController: UIViewController, UIWebViewDelegate {
         if didLoad == false {
             let config = SFSafariViewController.Configuration()
             let vc = SFSafariViewController(url: correspondentURL!, configuration: config)
+            vc.delegate = self
             present(vc, animated: true)
             didLoad = true
         } else {
             didLoad = false
         }
 
+    }
+    func safariViewControllerDidFinish(_ controller: SFSafariViewController) {
+        print("done")
+        self.tabBarController!.selectedIndex = 0
     }
 }
 
